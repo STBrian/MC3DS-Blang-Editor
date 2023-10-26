@@ -1,4 +1,5 @@
 import os
+import sys
 from tkinter import Tk
 from tkinter import filedialog
 
@@ -45,7 +46,7 @@ if __name__ == "__main__":
         else:
             break
 
-    idx = 3 + (3297 * 8)
+    idx = 8 + (3297 * 8)
 
     joinedText = ''
     joinedBytes = []
@@ -64,16 +65,48 @@ if __name__ == "__main__":
             break
 
     texts = joinedText.split("\n")
+    
+    print(f"Select how to search for a text: \n\t1: By ID\n\t2: By text\n\t0: Exit")
+    option = input("Enter an option: ")
+    match option:
+        case "1":
+            i = 0
+            for x in elements:
+                print(f"{i + 1}: {elements[i]}--{texts[i]}")
+                i += 1
 
-    i = 0
-    for x in elements:
-        print(f"{i + 1}: {elements[i]}--{texts[i]}")
-        i += 1
-
-    selection = input("Enter a selection: ")
-
-    selection = int(selection)
-
+            selection = input("Enter the id: ")
+            if selection.isdigit() == True:
+                print(selection.isdigit())
+                selection = int(selection)
+            else:
+                print("Error: The ID must be a int")
+                print("The program will close")
+                os.system("pause")
+                sys.exit()
+        case "2":
+            selection = input("Enter the text: ")
+            results = []
+            i = 0
+            for x in texts:
+                if selection == texts[i]:
+                    results.append(f"{i+1}: {elements[i]}--{texts[i]}")
+                i += 1
+            clear()
+            for x in results:
+                print(x)
+            selection = input("Enter the ID: ")
+            if selection.isdigit() == True:
+                print(selection.isdigit())
+                selection = int(selection)
+            else:
+                print("Error: The ID must be a int")
+                print("The program will close")
+                os.system("pause")
+                sys.exit()
+        case "0":
+            sys.exit()
+    
     clear()
 
     print(f"Selection: {elements[selection-1]}--{texts[selection-1]}")
@@ -133,5 +166,11 @@ if __name__ == "__main__":
 
     byte_arr = bytearray(output_data)
 
+    if not os.path.exists(f"{outputFolder}/"):
+        os.mkdir(f"{outputFolder}")
+
     with open(f"{outputFolder}/{filename}", "wb") as f:
         f.write(byte_arr)
+
+    print("Success. The program will close...")
+    os.system("pause")
