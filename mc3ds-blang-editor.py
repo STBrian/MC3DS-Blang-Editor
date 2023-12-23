@@ -1,5 +1,6 @@
 import os
 import sys
+import difflib
 from tkinter import Tk
 from tkinter import filedialog
 
@@ -48,23 +49,24 @@ if __name__ == "__main__":
 
     idx = 8 + (3297 * 8)
 
-    joinedText = ''
+    joinedText = []
+    texts = []
     joinedBytes = []
     joined = []
     while True:
         if idx + 1 <= len(bytes_decimal):
             if bytes_decimal[idx] != 0:
-                joinedText = (f"{joinedText}{chr(bytes_decimal[idx])}")
+                joinedText.append(bytes_decimal[idx])
                 joined.append(bytes_decimal[idx])
             else:
-                joinedText = (f"{joinedText}\n")
+                decoded_text = (bytearray(joinedText).decode("utf-8"))
+                texts.append(decoded_text)
                 joinedBytes.append(joined)
                 joined = []
+                joinedText = []
             idx += 1
         else:
             break
-
-    texts = joinedText.split("\n")
     
     print(f"Select how to search for a text: \n\t1: By ID\n\t2: By text\n\t0: Exit")
     option = input("Enter an option: ")
@@ -87,11 +89,15 @@ if __name__ == "__main__":
         case "2":
             selection = input("Enter the text: ")
             results = []
-            i = 0
-            for x in texts:
-                if selection == texts[i]:
-                    results.append(f"{i+1}: {elements[i]}--{texts[i]}")
-                i += 1
+            matches = difflib.get_close_matches(selection, texts, n=len(texts))
+            print(len(elements), len(texts))
+            for k in matches:
+                i = 0
+                for l in texts:
+                    if k == l:
+                        results.append(f"{i+1}: {elements[i]}--{texts[i]}")
+                        break
+                    i += 1
             clear()
             for x in results:
                 print(x)
@@ -114,8 +120,9 @@ if __name__ == "__main__":
     replaceText = input("Enter the text to replace: ")
 
     tempText = []
-    for l in replaceText:
-        tempText.append(ord(l))
+    encoded_text = replaceText.encode("utf-8")
+    for l in encoded_text:
+        tempText.append(l)
 
     joinedBytes[selection-1] = tempText
 
