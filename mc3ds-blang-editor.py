@@ -1,6 +1,7 @@
 import os
 import difflib
 import tkinter
+from tkinter import filedialog
 
 from modules.mc3dsblang import *
 
@@ -14,10 +15,10 @@ def clear():
         print("Unsupported OS")
 
 if __name__ == "__main__":
-    tkinter.CTk().withdraw()
+    tkinter.Tk().withdraw()
 
     print("Enter filepath: ")
-    filepath = tkinter.filedialog.askopenfilename()
+    filepath = filedialog.askopenfilename()
     print(filepath)
 
     file = BlangFile().open(filepath)
