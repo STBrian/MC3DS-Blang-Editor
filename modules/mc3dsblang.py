@@ -1,4 +1,5 @@
 import os
+import json
 from pathlib import Path
 
 class MC3DSBlangException(Exception):
@@ -13,7 +14,7 @@ class BlangFile:
         if type(path) != str:
             MC3DSBlangException("path must be a 'str'")
 
-        self.filename = Path(path).name
+        self.filename = Path(path).stem
 
         with open(path, "rb") as f:
             file_content = list(f.read())
@@ -30,10 +31,11 @@ class BlangFile:
         data = []
         for i in range(0, self.long):
             join = []
-            for j in range(0, 8):
+            for j in range(0, 4):
                 join.append(file_content[idx])
                 idx += 1
             data.append(join)
+            idx += 4
         self.data = data
 
         byte_1 = file_content[idx]
@@ -53,13 +55,6 @@ class BlangFile:
             texts.append(bytearray(join).decode("utf-8"))
             idx += 1
         self.texts = texts
-
-        print(self.data)
-        print(self.texts)
-        print(self.long)
-        print(self.textlong)
-        print(self.filename)
-
         return self
     
     def getData(self):
@@ -75,14 +70,10 @@ class BlangFile:
             MC3DSBlangException("newtext must be a 'str'")
 
         if text in self.texts:
-            print(True)
-            print(self.texts.index(text))
             if newtext != "" and newtext != '':
                 self.texts[self.texts.index(text)] = newtext
             else:
                 self.texts[self.texts.index(text)] = " "
-        else:
-            print(False)
         return
     
     def export(self, path: str):
@@ -91,42 +82,32 @@ class BlangFile:
 
         indexLong = []
         self.long = len(self.data)
-        bytes_list = list(self.long.to_bytes(4))
-        for i in range(0, 4):
-            indexLong.append(bytes_list[3 - i])
+        indexLong.extend(list(self.long.to_bytes(4, "little")))
 
         textsLong = []
         self.textlong = 0
         for i in range(0, len(self.texts)):
             self.textlong += len(self.texts[i].encode("utf-8"))
             self.textlong += 1
-        bytes_list = list(self.textlong.to_bytes(4))
-        for i in range(0, 4):
-            textsLong.append(bytes_list[3 - i])
+        textsLong.extend(list(self.textlong.to_bytes(4, "little")))
 
-        print(indexLong)
-        print(textsLong, self.textlong)
         indexData = []
         textData = []
 
         for i in range(0, self.long):
             # Copiar los primeros datos del elemento
-            item = self.data[i]
-            for j in range(0, 4):
-                indexData.append(item[j])
+            indexData.extend(self.data[i])
 
             # Posición de texto
-            bytes_list = list(len(textData).to_bytes(4))
-            for j in range(0, 4):
-                indexData.append(bytes_list[3 - j])
+            indexData.extend(list(len(textData).to_bytes(4, "little")))
             
             # Agregar texto
-            encodedText = list(self.texts[i].encode("utf-8"))
-            for j in range(0, len(encodedText)):
-                textData.append(encodedText[j])
+            textData.extend(list(self.texts[i].encode("utf-8")))
+
             # Separador/terminador
             textData.append(0)
 
+        # Junta todo en una sola lista
         self.exportData = []
         self.exportData.extend(indexLong)
         self.exportData.extend(indexData)
@@ -135,5 +116,51 @@ class BlangFile:
 
         self.exportData = bytearray(self.exportData)
 
-        with open(os.path.join(path, self.filename), "wb") as f:
+        with open(os.path.join(path, f"{self.filename}.blang"), "wb") as f:
             f.write(self.exportData)
+        return
+
+    def toJson(self, path: str):
+        dataDictionary = {}
+        for i in range(0, self.long):
+            item = self.data[i]
+            identifier = []
+            for j in range(0, 4):
+                identifier.append(item[j])
+            identifier = bytearray(identifier)
+            identifier = int.from_bytes(identifier, "little")
+            identifier = str(identifier)
+            
+            dataDictionary[identifier] = {}
+            dataDictionary[identifier]["order"] = i + 1
+            dataDictionary[identifier]["text"] = self.texts[i]
+        
+        outFile = open(os.path.join(path, f"{self.filename}.json"), "w", encoding="utf-8")
+        json.dump(dataDictionary, outFile, indent=4, ensure_ascii=False)
+        outFile.close()
+        return
+    
+    def fromJson(self, path: str):
+        if type(path) != str:
+            MC3DSBlangException("path must be a 'str'")
+
+        data = []
+        texts = []
+
+        with open(path, "r", encoding="utf-8") as jsonData:
+            dataDictionary = json.load(jsonData)
+
+        self.filename = Path(path).stem
+
+        idx = 1
+        while idx <= len(dataDictionary):
+            for key in dataDictionary:
+                if dataDictionary[key]["order"] == idx:
+                    data.append(list(int(key).to_bytes(4, "little")))
+                    texts.append(dataDictionary[key]["text"])
+                    idx += 1
+                    break
+
+        self.data = data
+        self.texts = texts
+        return self
