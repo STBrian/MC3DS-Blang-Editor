@@ -19,41 +19,41 @@ class BlangFile:
         with open(path, "rb") as f:
             file_content = list(f.read())
 
-        # Get header
-        byte_1 = file_content[0]
-        byte_2 = file_content[1]
-        byte_3 = file_content[2]
-        byte_4 = file_content[3]
+        # Obtener longitud
+        long = []
+        for i in range(0, 4):
+            long.append(file_content[i])
+        long = int.from_bytes(bytearray(long), "little")
 
-        self.long = byte_1 + (byte_2 * 16 ** 2) + (byte_3 * 16 ** 4) + (byte_4 * 16 ** 8)
-
+        # Obtener los elementos del indice
         idx = 4
         data = []
-        for i in range(0, self.long):
+        for i in range(0, long):
             join = []
             for j in range(0, 4):
                 join.append(file_content[idx])
                 idx += 1
             data.append(join)
             idx += 4
-        self.data = data
 
-        byte_1 = file_content[idx]
-        byte_2 = file_content[idx + 1]
-        byte_3 = file_content[idx + 2]
-        byte_4 = file_content[idx + 3]
+        # Longitud de los textos
+        textlong = []
+        for i in range(idx, idx + 4):
+            textlong.append(file_content[i])
+        textlong = int.from_bytes(bytearray(textlong), "little")
 
-        self.textlong = byte_1 + (byte_2 * 16 ** 2) + (byte_3 * 16 ** 4) + (byte_4 * 16 ** 8)
-
+        # Obtener los textos
         idx += 4
         texts = []
-        for i in range(0, self.long):
+        for i in range(0, long):
             join = []
             while file_content[idx] != 0:
                 join.append(file_content[idx])
                 idx += 1
             texts.append(bytearray(join).decode("utf-8"))
             idx += 1
+
+        self.data = data
         self.texts = texts
         return self
     
@@ -80,21 +80,12 @@ class BlangFile:
         if type(path) != str:
             MC3DSBlangException("path must be a 'str'")
 
-        indexLong = []
-        self.long = len(self.data)
-        indexLong.extend(list(self.long.to_bytes(4, "little")))
-
-        textsLong = []
-        self.textlong = 0
-        for i in range(0, len(self.texts)):
-            self.textlong += len(self.texts[i].encode("utf-8"))
-            self.textlong += 1
-        textsLong.extend(list(self.textlong.to_bytes(4, "little")))
+        long = len(self.data)
+        indexLong = list(long.to_bytes(4, "little"))
 
         indexData = []
         textData = []
-
-        for i in range(0, self.long):
+        for i in range(0, long):
             # Copiar los primeros datos del elemento
             indexData.extend(self.data[i])
 
@@ -106,6 +97,8 @@ class BlangFile:
 
             # Separador/terminador
             textData.append(0)
+
+        textsLong = list(len(textData).to_bytes(4, "little"))
 
         # Junta todo en una sola lista
         self.exportData = []
