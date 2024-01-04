@@ -1,183 +1,92 @@
 import os
-import sys
 import difflib
-from tkinter import Tk
-from tkinter import filedialog
+import customtkinter
+
+from modules.mc3dsblang import *
 
 def clear():
-    os.system("cls")
+    os_type = os.name
+    if os_type == "posix":
+        os.system("clear")
+    elif os_type == "nt":
+        os.system("cls")
+    else:
+        print("Unsupported OS")
 
 if __name__ == "__main__":
-    Tk().withdraw()
-
-    outputFolder = "MC3DS"
+    customtkinter.CTk().withdraw()
 
     print("Enter filepath: ")
-    filepath = filedialog.askopenfilename()
+    filepath = customtkinter.filedialog.askopenfilename()
     print(filepath)
 
-    filename = filepath.split("/")
-    filename = filename[len(filename)-1]
-
-    with open(filepath, "rb") as f:
-        file_content = f.read()
-
-    # Obtiene la lista de bytes en decimal
-    bytes_decimal = []
-    for b in file_content:
-        bytes_decimal.append(b)
-
-    idx = 3
-    time = 0
-    elements = []
-    text = ''
-    element = []
-    for i in range(0, 3297 * 8):
-        if idx + 1 <= len(bytes_decimal):
-            element.append(bytes_decimal[idx])
-            time += 1
-            if time == 8:
-                if len(element) == 0:
-                    break
-                elements.append(element)
-                text = (f"{text}{element}\n")
-                element = []
-                time = 0
-            idx += 1
-        else:
-            break
-
-    idx = 8 + (3297 * 8)
-
-    joinedText = []
-    texts = []
-    joinedBytes = []
-    joined = []
-    while True:
-        if idx + 1 <= len(bytes_decimal):
-            if bytes_decimal[idx] != 0:
-                joinedText.append(bytes_decimal[idx])
-                joined.append(bytes_decimal[idx])
-            else:
-                decoded_text = (bytearray(joinedText).decode("utf-8"))
-                texts.append(decoded_text)
-                joinedBytes.append(joined)
-                joined = []
-                joinedText = []
-            idx += 1
-        else:
-            break
+    file = BlangFile().open(filepath)
+    clear()
     
-    print(f"Select how to search for a text: \n\t1: By ID\n\t2: By text\n\t0: Exit")
-    option = input("Enter an option: ")
-    match option:
-        case "1":
-            i = 0
-            for x in elements:
-                print(f"{i + 1}: {elements[i]}--{texts[i]}")
-                i += 1
-
-            selection = input("Enter the id: ")
-            if selection.isdigit() == True:
-                print(selection.isdigit())
-                selection = int(selection)
-            else:
-                print("Error: The ID must be a int")
-                print("The program will close")
-                os.system("pause")
-                sys.exit()
-        case "2":
-            selection = input("Enter the text: ")
-            results = []
-            matches = difflib.get_close_matches(selection, texts, n=len(texts))
-            print(len(elements), len(texts))
-            for k in matches:
+    closeMenu1 = False
+    while closeMenu1 == False:
+        print(f"Enter an option: \n\t1: Search By ID\n\t2: Search By text\n\t3: Export\n\t0: Exit")
+        option = input("Enter an option: ")
+        match option:
+            case "1":
+                clear()
                 i = 0
-                for l in texts:
-                    if k == l:
-                        results.append(f"{i+1}: {elements[i]}--{texts[i]}")
-                        break
+                items = file.getTexts()
+                for x in items:
+                    print(f"{i + 1}: {items[i]}")
                     i += 1
-            clear()
-            for x in results:
-                print(x)
-            selection = input("Enter the ID: ")
-            if selection.isdigit() == True:
-                print(selection.isdigit())
-                selection = int(selection)
-            else:
-                print("Error: The ID must be a int")
-                print("The program will close")
-                os.system("pause")
-                sys.exit()
-        case "0":
-            sys.exit()
-    
-    clear()
 
-    print(f"Selection: {elements[selection-1]}--{texts[selection-1]}")
+                selection = input("Enter the id: ")
+                if selection.isdigit() == True:
+                    print(selection.isdigit())
+                    selection = int(selection)
+                    newText = input("Enter the text to replace to: ")
 
-    replaceText = input("Enter the text to replace: ")
+                    file.replace(items[selection - 1], newText)
+                    clear()
+                    print("Successfully replaced!")
+                else:
+                    clear()
+                    print("Error: The ID must be a int")
+            case "2":
+                clear()
+                selection = input("Enter the text: ")
+                texts = file.getTexts()
+                results = []
+                matches = difflib.get_close_matches(selection, texts, cutoff=0.4)
+                for k in matches:
+                    if k in texts:
+                        results.append(k)
+                clear()
+                idx = 1
+                for x in results:
+                    print(f"{idx}: {x}")
+                    idx += 1
 
-    tempText = []
-    encoded_text = replaceText.encode("utf-8")
-    for l in encoded_text:
-        tempText.append(l)
+                selection = input("Enter the ID: ")
+                if selection.isdigit() == True:
+                    print(selection.isdigit())
+                    selection = int(selection)
+                    newText = input("Enter the text to replace to: ")
 
-    joinedBytes[selection-1] = tempText
+                    file.replace(texts[selection - 1], newText)
+                    clear()
+                    print("Successfully replaced!")
+                else:
+                    clear()
+                    print("Error: The ID must be a int")
 
-    output_data = [225, 12, 0]
-    idx = 0
-    byte_1 = 0
-    byte_2 = 0
-    byte_3 = 0
-    for item in elements:
-        singleElement = item
-        output_data.append(singleElement[0])
-        output_data.append(singleElement[1])
-        output_data.append(singleElement[2])
-        output_data.append(singleElement[3])
-        output_data.append(singleElement[4])
-        output_data.append(byte_1)
-        output_data.append(byte_2)
-        output_data.append(byte_3)
-        for i in range(0, len(joinedBytes[idx]) + 1):
-            if byte_1 == 256:
-                byte_2 += 1
-                byte_1 = 0
-            if byte_2 == 256:
-                byte_3 += 1
-                byte_2 = 0
-            byte_1 += 1
-            if byte_1 == 256:
-                byte_2 += 1
-                byte_1 = 0
-            if byte_2 == 256:
-                byte_3 += 1
-                byte_2 = 0
-        idx += 1
+            case "3":
+                # Export
+                clear()
+                outputFolder = input("Enter the output folder: ")
+                if outputFolder != "":
+                    file.export(outputFolder)
+                    clear()
+                    print("Successfully exported!")
+                else:
+                    clear()
+                    print("Error: Folder cannot be empty")
 
-    # Insert the lenght of the text part
-    output_data.append(0)
-    output_data.append(byte_1)
-    output_data.append(byte_2)
-    output_data.append(byte_3)
-    output_data.append(0)
-    
-    for item in joinedBytes:
-        for x in item:
-            output_data.append(x)
-        output_data.append(0)
-
-    clear()
-
-    byte_arr = bytearray(output_data)
-
-    if not os.path.exists(f"{outputFolder}/"):
-        os.mkdir(f"{outputFolder}")
-
-    with open(f"{outputFolder}/{filename}", "wb") as f:
-        f.write(byte_arr)
-
-    print("Success. The program will close...")
-    os.system("pause")
+            case "0":
+                closeMenu1 = True
