@@ -10,9 +10,11 @@ class BlangFile:
     def __init__(self):
         return
     
-    def open(self, path: str):
+    def open(self, path: str = None):
+        if path == None:
+            raise MC3DSBlangException("path is empty")
         if type(path) != str:
-            MC3DSBlangException("path must be a 'str'")
+            raise MC3DSBlangException("path must be a 'str'")
 
         self.filename = Path(path).stem
 
@@ -65,9 +67,9 @@ class BlangFile:
 
     def replace(self, text: str, newtext: str):
         if type(text) != str:
-            MC3DSBlangException("text must be a 'str'")
+            raise MC3DSBlangException("text must be a 'str'")
         if type(newtext) != str:
-            MC3DSBlangException("newtext must be a 'str'")
+            raise MC3DSBlangException("newtext must be a 'str'")
 
         if text in self.texts:
             if newtext != "" and newtext != '':
@@ -78,7 +80,7 @@ class BlangFile:
     
     def export(self, path: str):
         if type(path) != str:
-            MC3DSBlangException("path must be a 'str'")
+            raise MC3DSBlangException("path must be a 'str'")
 
         long = len(self.data)
         indexLong = list(long.to_bytes(4, "little"))
@@ -135,7 +137,7 @@ class BlangFile:
     
     def fromJson(self, path: str):
         if type(path) != str:
-            MC3DSBlangException("path must be a 'str'")
+            raise MC3DSBlangException("path must be a 'str'")
 
         data = []
         texts = []

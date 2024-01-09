@@ -3,7 +3,7 @@ import difflib
 import tkinter
 from tkinter import filedialog
 
-from modules.mc3dsblang import *
+from modules import *
 
 def clear():
     os_type = os.name

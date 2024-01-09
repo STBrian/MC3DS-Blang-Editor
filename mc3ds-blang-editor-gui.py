@@ -1,7 +1,6 @@
 import customtkinter
 
-from modules.mc3dsblang import *
+from modules import *
 
-blang = BlangFile()
-blang.open("original/en_US-pocket.blang")
-blang.export("MC3DS")
+file = BlangFile().open("MC3DS/en_US-pocket.blang")
+

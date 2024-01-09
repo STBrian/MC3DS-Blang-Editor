@@ -1,5 +1,5 @@
 import os
-from modules.mc3dsblang import *
+from modules import *
 
 inputFile = input("Enter the file path: ")
 blangFile = BlangFile().fromJson(inputFile)
