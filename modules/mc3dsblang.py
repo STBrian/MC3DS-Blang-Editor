@@ -116,8 +116,9 @@ class BlangFile:
         return
 
     def toJson(self, path: str):
+        long = len(self.data)
         dataDictionary = {}
-        for i in range(0, self.long):
+        for i in range(0, long):
             item = self.data[i]
             identifier = []
             for j in range(0, 4):
