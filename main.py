@@ -10,7 +10,7 @@ class App(tkinter.Tk):
     def __init__(self, fp = None):
         super().__init__()
 
-        self.title("MC3DS BJSON Editor")
+        self.title("MC3DS Blang Editor")
         self.geometry('640x400')
         self.columnconfigure(0, weight=4)
         self.rowconfigure(0, weight=1)
