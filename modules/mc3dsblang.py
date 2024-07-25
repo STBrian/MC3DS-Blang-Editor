@@ -16,8 +16,6 @@ class BlangFile:
         if type(path) != str:
             raise MC3DSBlangException("path must be a 'str'")
 
-        self.filename = Path(path).stem
-
         with open(path, "rb") as f:
             file_content = list(f.read())
 
@@ -65,17 +63,17 @@ class BlangFile:
     def getTexts(self):
         return self.texts
 
-    def replace(self, text: str, newtext: str):
-        if type(text) != str:
-            raise MC3DSBlangException("text must be a 'str'")
+    def replace(self, idx: int, newtext: str):
+        if type(idx) != int:
+            raise MC3DSBlangException("idx must be an 'int'")
         if type(newtext) != str:
             raise MC3DSBlangException("newtext must be a 'str'")
 
-        if text in self.texts:
+        if idx >= 0 and idx < len(self.texts):
             if newtext != "" and newtext != '':
-                self.texts[self.texts.index(text)] = newtext
+                self.texts[idx] = newtext
             else:
-                self.texts[self.texts.index(text)] = " "
+                self.texts[idx] = " "
         return
     
     def export(self, path: str):
@@ -111,11 +109,11 @@ class BlangFile:
 
         self.exportData = bytearray(self.exportData)
 
-        with open(os.path.join(path, f"{self.filename}.blang"), "wb") as f:
+        with open(path, "wb") as f:
             f.write(self.exportData)
         return
 
-    def toJson(self, path: str):
+    def exportToJson(self, path: str):
         long = len(self.data)
         dataDictionary = {}
         for i in range(0, long):
@@ -131,22 +129,37 @@ class BlangFile:
             dataDictionary[identifier]["order"] = i + 1
             dataDictionary[identifier]["text"] = self.texts[i]
         
-        outFile = open(os.path.join(path, f"{self.filename}.json"), "w", encoding="utf-8")
+        outFile = open(path, "w", encoding="utf-8")
         json.dump(dataDictionary, outFile, indent=4, ensure_ascii=False)
         outFile.close()
         return
     
-    def fromJson(self, path: str):
-        if type(path) != str:
+    def toJson(self):
+        long = len(self.data)
+        dataDictionary = {}
+        for i in range(0, long):
+            item = self.data[i]
+            identifier = []
+            for j in range(0, 4):
+                identifier.append(item[j])
+            identifier = bytearray(identifier)
+            identifier = int.from_bytes(identifier, "little")
+            identifier = str(identifier)
+            
+            dataDictionary[identifier] = {}
+            dataDictionary[identifier]["order"] = i + 1
+            dataDictionary[identifier]["text"] = self.texts[i]
+        
+        return json.dumps(dataDictionary, indent=4, ensure_ascii=False)
+    
+    def importFromJson(self, json_string: str):
+        if type(json_string) != str:
             raise MC3DSBlangException("path must be a 'str'")
 
         data = []
         texts = []
 
-        with open(path, "r", encoding="utf-8") as jsonData:
-            dataDictionary = json.load(jsonData)
-
-        self.filename = Path(path).stem
+        dataDictionary = json.loads(json_string)
 
         idx = 1
         while idx <= len(dataDictionary):

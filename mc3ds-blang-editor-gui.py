@@ -21,7 +21,7 @@ class App(customtkinter.CTk):
             self.runningDir = os.path.dirname(__file__)
             self.outputFolder = os.path.join(self.runningDir, "MC3DS")
 
-        self.title("MC3DS Texture Maker")
+        self.title("MC3DS Blang Editor")
         os_name = os.name
         if os_name == "nt":
             self.iconbitmap(default=os.path.join(self.app_path, "icon.ico"))
