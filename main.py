@@ -6,8 +6,15 @@ from tkinter import ttk
 import argparse
 from pathlib import Path
 
+from modules import MC3DSBlang
+
+def populate_tree(tree: ttk.Treeview, blangFile: MC3DSBlang.BlangFile):
+    for i, element in enumerate(blangFile.getTexts()):
+        tree.insert('', tkinter.END, values=(i+1, element))
+    tree.grid(row=0, column=0, sticky="wesn")
+
 class App(tkinter.Tk):
-    def __init__(self, fp = None):
+    def __init__(self, fp: str|None = None):
         super().__init__()
 
         self.title("MC3DS Blang Editor")
@@ -44,8 +51,13 @@ class App(tkinter.Tk):
         menubar.add_cascade(label="File", menu=file_menu, underline=0)
         # -------------------------------
 
-        self.tree = ttk.Treeview(self, show='tree', selectmode="browse")
+        self.tree = ttk.Treeview(self, columns=("id", "text"), show='headings', selectmode="browse")
+        self.tree.heading("id", text="ID")
+        self.tree.heading("text", text="Text")
+        self.tree.column("id", width=1, anchor=tkinter.E)
+        self.tree.column("text", width=400)
         self.tree.bind('<<TreeviewSelect>>', self.itemSelected)
+        self.tree.bind("<Double-1>", self.OnDoubleClick)
         self.scrollbar = tkinter.Scrollbar(self, orient=tkinter.VERTICAL, command=self.tree.yview)
         self.tree.configure(yscrollcommand=self.scrollbar.set)
         self.scrollbar.grid(row=0, column=1, sticky="ns")
@@ -55,8 +67,13 @@ class App(tkinter.Tk):
 
         if fp != None:
             inputPath = Path(fp)
+            self.file = MC3DSBlang.BlangFile().open(inputPath)
+            populate_tree(self.tree, self.file)
             self.title(f"MC3DS BJSON Editor - {inputPath.name}")
             pass
+
+    def OnDoubleClick(self, event):
+        pass
 
     def itemSelected(self, event):
         for selected_item in self.tree.selection():
@@ -76,8 +93,10 @@ class App(tkinter.Tk):
             inputFp = tkinter.filedialog.askopenfilename(filetypes=[("BLANG Files", ".blang")])
             inputPath = Path(inputFp)
             if inputFp != "":
-                self.clearTreeview()
                 self.tree.grid_remove()
+                self.clearTreeview()
+                self.file = MC3DSBlang.BlangFile().open(inputPath)
+                populate_tree(self.tree, self.file)
                 self.title(f"MC3DS BJSON Editor - {inputPath.name}")
                 self.filePath = inputFp
                 self.saved = True

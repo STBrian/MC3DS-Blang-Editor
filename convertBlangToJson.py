@@ -5,7 +5,7 @@ inputFile = input("Enter the file path: ")
 blangFile = BlangFile().open(inputFile)
 
 outputDir = input("Enter the output directory: ")
-blangFile.toJson(outputDir)
+blangFile.exportToJson(outputDir)
 
 print("Success!")
 

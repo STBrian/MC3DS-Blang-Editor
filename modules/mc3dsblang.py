@@ -10,12 +10,14 @@ class BlangFile:
     def __init__(self):
         return
     
-    def open(self, path: str = None):
-        if path == None:
-            raise MC3DSBlangException("path is empty")
-        if type(path) != str:
-            raise MC3DSBlangException("path must be a 'str'")
-
+    def open(self, path: str|Path):
+        if isinstance(path, str):
+            path = Path(path)
+        elif isinstance(path, Path):
+            pass
+        else:
+            raise TypeError("path must be a 'str' or 'Path'")
+        
         with open(path, "rb") as f:
             file_content = list(f.read())
 
@@ -60,7 +62,7 @@ class BlangFile:
     def getData(self):
         return self.data
 
-    def getTexts(self):
+    def getTexts(self) -> list:
         return self.texts
 
     def replace(self, idx: int, newtext: str):
@@ -117,11 +119,7 @@ class BlangFile:
         long = len(self.data)
         dataDictionary = {}
         for i in range(0, long):
-            item = self.data[i]
-            identifier = []
-            for j in range(0, 4):
-                identifier.append(item[j])
-            identifier = bytearray(identifier)
+            identifier = bytearray(self.data[i])
             identifier = int.from_bytes(identifier, "little")
             identifier = str(identifier)
             
@@ -133,24 +131,6 @@ class BlangFile:
         json.dump(dataDictionary, outFile, indent=4, ensure_ascii=False)
         outFile.close()
         return
-    
-    def toJson(self):
-        long = len(self.data)
-        dataDictionary = {}
-        for i in range(0, long):
-            item = self.data[i]
-            identifier = []
-            for j in range(0, 4):
-                identifier.append(item[j])
-            identifier = bytearray(identifier)
-            identifier = int.from_bytes(identifier, "little")
-            identifier = str(identifier)
-            
-            dataDictionary[identifier] = {}
-            dataDictionary[identifier]["order"] = i + 1
-            dataDictionary[identifier]["text"] = self.texts[i]
-        
-        return json.dumps(dataDictionary, indent=4, ensure_ascii=False)
     
     def importFromJson(self, json_string: str):
         if type(json_string) != str:
