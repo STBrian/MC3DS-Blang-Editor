@@ -1,6 +1,6 @@
-import os
 import json
 from pathlib import Path
+from pyBjson.string_hash import get_JOAAT_hash
 
 class MC3DSBlangException(Exception):
     def __init__(self, message):
@@ -115,7 +115,7 @@ class BlangFile:
             f.write(self.exportData)
         return
 
-    def exportToJson(self, path: str):
+    def getStringData(self):
         long = len(self.data)
         dataDictionary = {}
         for i in range(0, long):
@@ -124,32 +124,33 @@ class BlangFile:
             identifier = str(identifier)
             
             dataDictionary[identifier] = {}
-            dataDictionary[identifier]["order"] = i + 1
             dataDictionary[identifier]["text"] = self.texts[i]
-        
-        outFile = open(path, "w", encoding="utf-8")
-        json.dump(dataDictionary, outFile, indent=4, ensure_ascii=False)
-        outFile.close()
-        return
-    
-    def importFromJson(self, json_string: str):
-        if type(json_string) != str:
-            raise MC3DSBlangException("path must be a 'str'")
+        return dataDictionary
 
-        data = []
+    def getJson(self):
+        dataDictionary = self.getStringData()
+        json_str = json.dumps(dataDictionary, indent=4, ensure_ascii=False)
+        return json_str
+    
+    def importFromDict(self, data: dict):
+        if type(data) != dict:
+            raise MC3DSBlangException("path must be a 'str'")
+        
+        hashedDict = {}
+        stringHashes: list[int] = []
+        for key, value in data.items():
+            stringHash = get_JOAAT_hash(key.lower().encode("utf-8"))
+            hashedDict[str(stringHash)] = value
+            stringHashes.append(stringHash)
+        stringHashes.sort()
+
+        sortedData = []
         texts = []
 
-        dataDictionary = json.loads(json_string)
+        for key in stringHashes:
+            sortedData.append(list(key.to_bytes(4, "little")))
+            texts.append(hashedDict[str(key)])
 
-        idx = 1
-        while idx <= len(dataDictionary):
-            for key in dataDictionary:
-                if dataDictionary[key]["order"] == idx:
-                    data.append(list(int(key).to_bytes(4, "little")))
-                    texts.append(dataDictionary[key]["text"])
-                    idx += 1
-                    break
-
-        self.data = data
+        self.data = sortedData
         self.texts = texts
         return self

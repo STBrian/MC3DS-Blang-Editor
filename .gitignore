@@ -1,5 +1,8 @@
-/src
-/original
-/MC3DS
+/*/*.blang
 /modules/__pycache__
 /venv
+/*.blang
+/*.bin
+/*/*.lang
+/*.lang
+/out
