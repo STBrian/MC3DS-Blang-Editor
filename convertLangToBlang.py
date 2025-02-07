@@ -1,15 +1,35 @@
 import os, sys
 from modules.MC3DSBlang import BlangFile
 
+def parseLang(data: str) -> dict:
+    lines = data.split("\n")
+    length = len(lines)
+    for i in range(length-1, -1, -1):
+        if len(lines[i]) < 1:
+            lines.pop(i)
+        elif lines[i].startswith("##") or lines[i].startswith("\ufeff##"):
+            lines.pop(i)
+        else:
+            isEmpty = True
+            for character in lines[i]:
+                if character != " ":
+                    isEmpty = False
+                    break
+            if isEmpty:
+                lines.pop(i)
+
+    data_dict = {}
+    for line in lines:
+        value = line.split("=", 1)
+        data_dict[value[0]] = value[1]
+    
+    return data_dict
+
 if len(sys.argv) > 1:
     if os.path.exists(sys.argv[1]) and os.path.isfile(sys.argv[1]):
         with open(sys.argv[1], "r", encoding="utf-8") as f:
-            langData = [element.split('\n')[0] for element in f.readlines()]
-        listPairs = [(element.split('=')[0], element.split('=', maxsplit=1)[1]) for element in langData]
+            dataDict = parseLang(f.read())
 
-        dataDict = {}
-        for element in listPairs:
-            dataDict[element[0]] = element[1]
         blangFile = BlangFile().importFromDict(dataDict)
 
         if not os.path.exists("./out"):
