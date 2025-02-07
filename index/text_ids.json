@@ -9664,5 +9664,35 @@
     },
     "tile.thinStainedGlass.yellow.name": {
         "hash": 714332762
+    },
+    "patch8.welcome": {
+        "hash": 1508658994
+    },
+    "patch5.welcome": {
+        "hash": 1037015766
+    },
+    "patch2.welcome": {
+        "hash": 633232262
+    },
+    "patch4.welcome": {
+        "hash": 345081610
+    },
+    "patch3.welcome": {
+        "hash": 139104340
+    },
+    "patch1.welcome": {
+        "hash": 2372211176
+    },
+    "skin.Festive2016.CoolClaus": {
+        "hash": 3840624264
+    },
+    "patch7.welcome": {
+        "hash": 3931925988
+    },
+    "patch6.welcome": {
+        "hash": 4232331360
+    },
+    "store.error.wireless_off": {
+        "hash": 3957426460
     }
 }
