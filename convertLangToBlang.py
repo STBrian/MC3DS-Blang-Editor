@@ -7,8 +7,10 @@ def parseLang(data: str) -> dict:
     for i in range(length-1, -1, -1):
         if len(lines[i]) < 1:
             lines.pop(i)
-        elif lines[i].startswith("##") or lines[i].startswith("\ufeff##"):
+        elif lines[i].startswith("##"):
             lines.pop(i)
+        elif lines[i].find("=") == -1:
+            raise SyntaxError(f"Expected at least one '=' in line {i} of file")
         else:
             isEmpty = True
             for character in lines[i]:
@@ -27,7 +29,7 @@ def parseLang(data: str) -> dict:
 
 if len(sys.argv) > 1:
     if os.path.exists(sys.argv[1]) and os.path.isfile(sys.argv[1]):
-        with open(sys.argv[1], "r", encoding="utf-8") as f:
+        with open(sys.argv[1], "r", encoding="utf-8-sig") as f:
             dataDict = parseLang(f.read())
 
         blangFile = BlangFile().importFromDict(dataDict)

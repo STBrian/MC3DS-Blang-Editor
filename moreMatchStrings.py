@@ -17,8 +17,10 @@ def parseLang(data: str) -> dict:
     for i in range(length-1, -1, -1):
         if len(lines[i]) < 1:
             lines.pop(i)
-        elif lines[i].startswith("##") or lines[i].startswith("\ufeff##"):
+        elif lines[i].startswith("##"):
             lines.pop(i)
+        elif lines[i].find("=") == -1:
+            raise SyntaxError(f"Expected at least one '=' in line {i} of file")
         else:
             isEmpty = True
             for character in lines[i]:
@@ -50,7 +52,7 @@ def main():
 
     missingHashes = listDiff(allHashes, currentHashes)
 
-    with open("./en_US-pocket.lang", "r", encoding="utf-8") as f:
+    with open("./en_US-pocket.lang", "r", encoding="utf-8-sig") as f:
         parsedLang = parseLang(f.read())
 
     for element in parsedLang.keys():
