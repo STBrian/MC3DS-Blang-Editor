@@ -50,7 +50,7 @@ def main():
 
     missingHashes = listDiff(allHashes, currentHashes)
 
-    with open("./en_US.lang", "r", encoding="utf-8") as f:
+    with open("./en_US-pocket.lang", "r", encoding="utf-8") as f:
         parsedLang = parseLang(f.read())
 
     for element in parsedLang.keys():

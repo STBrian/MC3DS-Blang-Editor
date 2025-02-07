@@ -9097,5 +9097,572 @@
     },
     "platform.model.unknown": {
         "hash": 875115290
+    },
+    "action.interact.wolfcollar": {
+        "hash": 1099518028
+    },
+    "attribute.name.generic.followRange": {
+        "hash": 3416730886
+    },
+    "attribute.name.generic.movementSpeed": {
+        "hash": 3369154057
+    },
+    "craftingScreen.tab.buildingBlocks": {
+        "hash": 142577736
+    },
+    "craftingScreen.tab.decorations": {
+        "hash": 2337481189
+    },
+    "craftingScreen.tab.tools": {
+        "hash": 699612885
+    },
+    "craftingScreen.tab.miscellaneous": {
+        "hash": 4113827123
+    },
+    "commands.blockdata.usage": {
+        "hash": 2784760767
+    },
+    "commands.chunkinfo.usage": {
+        "hash": 113240724
+    },
+    "commands.clear.usage": {
+        "hash": 268720892
+    },
+    "commands.clone.outOfWorld": {
+        "hash": 3455834111
+    },
+    "commands.clone.usage": {
+        "hash": 2005358791
+    },
+    "commands.compare.outOfWorld": {
+        "hash": 793914724
+    },
+    "commands.compare.usage": {
+        "hash": 4238785839
+    },
+    "commands.debug.usage": {
+        "hash": 3181995767
+    },
+    "commands.defaultgamemode.usage": {
+        "hash": 1051466848
+    },
+    "commands.deop.usage": {
+        "hash": 2197511331
+    },
+    "commands.downfall.usage": {
+        "hash": 2071003623
+    },
+    "commands.effect.usage": {
+        "hash": 1144380339
+    },
+    "commands.enchant.usage": {
+        "hash": 2464940595
+    },
+    "commands.entitydata.usage": {
+        "hash": 2517404417
+    },
+    "commands.execute.usage": {
+        "hash": 2377512752
+    },
+    "commands.fill.usage": {
+        "hash": 3621710217
+    },
+    "commands.gamemode.usage": {
+        "hash": 263806568
+    },
+    "commands.gamerule.usage": {
+        "hash": 1677250978
+    },
+    "commands.give.usage": {
+        "hash": 1062180625
+    },
+    "commands.help.usage": {
+        "hash": 2686184191
+    },
+    "commands.kick.usage": {
+        "hash": 2842710175
+    },
+    "commands.kill.usage": {
+        "hash": 2146965027
+    },
+    "commands.me.usage": {
+        "hash": 603325763
+    },
+    "commands.message.usage": {
+        "hash": 1778246483
+    },
+    "commands.op.usage": {
+        "hash": 4102016461
+    },
+    "commands.particle.usage": {
+        "hash": 2271064442
+    },
+    "commands.players.usage": {
+        "hash": 1405700746
+    },
+    "commands.playsound.usage": {
+        "hash": 2572555109
+    },
+    "commands.publish.usage": {
+        "hash": 3048183788
+    },
+    "commands.replaceitem.block.usage": {
+        "hash": 854946045
+    },
+    "commands.replaceitem.entity.usage": {
+        "hash": 3534197104
+    },
+    "commands.replaceitem.usage": {
+        "hash": 2991675431
+    },
+    "commands.save.usage": {
+        "hash": 4122283951
+    },
+    "commands.save-off.usage": {
+        "hash": 1345071865
+    },
+    "commands.save-on.usage": {
+        "hash": 2078550480
+    },
+    "commands.say.usage": {
+        "hash": 3381248344
+    },
+    "commands.seed.usage": {
+        "hash": 3105700986
+    },
+    "commands.setblock.usage": {
+        "hash": 1885280837
+    },
+    "commands.setidletimeout.usage": {
+        "hash": 477299487
+    },
+    "commands.setworldspawn.usage": {
+        "hash": 778732289
+    },
+    "commands.spawnpoint.usage": {
+        "hash": 2509936979
+    },
+    "commands.spreadplayers.usage": {
+        "hash": 3019279620
+    },
+    "commands.stats.block.clear.usage": {
+        "hash": 4080525780
+    },
+    "commands.stats.block.set.usage": {
+        "hash": 1436082300
+    },
+    "commands.stats.block.usage": {
+        "hash": 2960024446
+    },
+    "commands.stats.entity.clear.usage": {
+        "hash": 2397726603
+    },
+    "commands.stats.entity.set.usage": {
+        "hash": 2730596894
+    },
+    "commands.stats.entity.usage": {
+        "hash": 2126010676
+    },
+    "commands.stats.usage": {
+        "hash": 3781415260
+    },
+    "commands.summon.usage": {
+        "hash": 322077787
+    },
+    "commands.tellraw.usage": {
+        "hash": 1147652241
+    },
+    "commands.testfor.usage": {
+        "hash": 1995763995
+    },
+    "commands.testforblock.usage": {
+        "hash": 186914709
+    },
+    "commands.time.query": {
+        "hash": 3512430649
+    },
+    "commands.time.usage": {
+        "hash": 950667262
+    },
+    "commands.title.usage": {
+        "hash": 2992222053
+    },
+    "commands.title.usage.clear": {
+        "hash": 3174033996
+    },
+    "commands.title.usage.times": {
+        "hash": 3664118614
+    },
+    "commands.title.usage.title": {
+        "hash": 1103959367
+    },
+    "commands.tp.usage": {
+        "hash": 1881952655
+    },
+    "commands.trigger.usage": {
+        "hash": 3760752425
+    },
+    "commands.weather.usage": {
+        "hash": 891108757
+    },
+    "commands.whitelist.add.usage": {
+        "hash": 995214860
+    },
+    "commands.whitelist.remove.usage": {
+        "hash": 2134664402
+    },
+    "commands.whitelist.usage": {
+        "hash": 2330379366
+    },
+    "commands.worldborder.add.usage": {
+        "hash": 3241516483
+    },
+    "commands.worldborder.center.usage": {
+        "hash": 3269566168
+    },
+    "commands.worldborder.damage.amount.usage": {
+        "hash": 1458582800
+    },
+    "commands.worldborder.damage.buffer.usage": {
+        "hash": 3251960957
+    },
+    "commands.worldborder.damage.usage": {
+        "hash": 1072790593
+    },
+    "commands.worldborder.set.usage": {
+        "hash": 1904983678
+    },
+    "commands.worldborder.usage": {
+        "hash": 3257700532
+    },
+    "commands.worldborder.warning.distance.usage": {
+        "hash": 3589459913
+    },
+    "commands.worldborder.warning.time.usage": {
+        "hash": 1664094658
+    },
+    "commands.worldborder.warning.usage": {
+        "hash": 1252018329
+    },
+    "commands.xp.usage": {
+        "hash": 3583479062
+    },
+    "controllerLayoutScreen.cycleItemLeft": {
+        "hash": 3344048282
+    },
+    "controllerLayoutScreen.cycleItemRight": {
+        "hash": 3885647756
+    },
+    "controllerLayoutScreen.flyDownSlow": {
+        "hash": 597167476
+    },
+    "controllerLayoutScreen.flyUpSlow": {
+        "hash": 1567937737
+    },
+    "controllerLayoutScreen.mobEffects": {
+        "hash": 2819357688
+    },
+    "controllerLayoutScreen.moveBack": {
+        "hash": 4229271418
+    },
+    "controllerLayoutScreen.moveForward": {
+        "hash": 3727476004
+    },
+    "controllerLayoutScreen.moveLeft": {
+        "hash": 2738086105
+    },
+    "controllerLayoutScreen.moveRight": {
+        "hash": 144942926
+    },
+    "controllerLayoutScreen.pause": {
+        "hash": 2560473231
+    },
+    "item.armorStand.name": {
+        "hash": 1771681671
+    },
+    "item.minecartCommandBlock.name": {
+        "hash": 3629510549
+    },
+    "item.record.11.desc": {
+        "hash": 3779521684
+    },
+    "item.record.13.desc": {
+        "hash": 4036894804
+    },
+    "item.record.blocks.desc": {
+        "hash": 3840798025
+    },
+    "item.record.cat.desc": {
+        "hash": 2569712698
+    },
+    "item.record.chirp.desc": {
+        "hash": 2158273104
+    },
+    "item.record.far.desc": {
+        "hash": 79152182
+    },
+    "item.record.mall.desc": {
+        "hash": 1372014637
+    },
+    "item.record.mellohi.desc": {
+        "hash": 294470552
+    },
+    "item.record.stal.desc": {
+        "hash": 3769127526
+    },
+    "item.record.strad.desc": {
+        "hash": 984415378
+    },
+    "item.record.wait.desc": {
+        "hash": 1599379769
+    },
+    "item.record.ward.desc": {
+        "hash": 3068588489
+    },
+    "item.writingBook.name": {
+        "hash": 3054356126
+    },
+    "item.writtenBook.name": {
+        "hash": 2602291943
+    },
+    "itemGroup.combat": {
+        "hash": 808450089
+    },
+    "itemGroup.inventory": {
+        "hash": 2831491296
+    },
+    "itemGroup.materials": {
+        "hash": 237777403
+    },
+    "language.code": {
+        "hash": 1028069144
+    },
+    "language.region": {
+        "hash": 2615094869
+    },
+    "progressSCreen.riftControls.title": {
+        "hash": 4103095494
+    },
+    "progressScreen.riftControls.classicButton": {
+        "hash": 3601202310
+    },
+    "progressScreen.riftControls.VRButton": {
+        "hash": 2236658189
+    },
+    "progressScreen.riftControls.classicDiscription": {
+        "hash": 3860756078
+    },
+    "progressScreen.riftControls.enhancedVRDiscription": {
+        "hash": 1771395236
+    },
+    "progressScreen.riftControls.showScreenMessage": {
+        "hash": 1330335021
+    },
+    "skinpack.StoryMode": {
+        "hash": 536453960
+    },
+    "skin.StoryMode.Axel": {
+        "hash": 2721747038
+    },
+    "skin.StoryMode.AxelArmored": {
+        "hash": 1395458133
+    },
+    "skin.StoryMode.Ellegaard": {
+        "hash": 3387944259
+    },
+    "skin.StoryMode.EllegaardArmored": {
+        "hash": 546447951
+    },
+    "skin.StoryMode.Gabriel": {
+        "hash": 3558726862
+    },
+    "skin.StoryMode.Ivor": {
+        "hash": 1544245006
+    },
+    "skin.StoryMode.JesseF": {
+        "hash": 1678907429
+    },
+    "skin.StoryMode.JesseFArmored": {
+        "hash": 241070624
+    },
+    "skin.StoryMode.JesseFA": {
+        "hash": 4259141728
+    },
+    "skin.StoryMode.JesseFAArmored": {
+        "hash": 1288057903
+    },
+    "skin.StoryMode.JesseFB": {
+        "hash": 614508006
+    },
+    "skin.StoryMode.JesseFBArmored": {
+        "hash": 46194099
+    },
+    "skin.StoryMode.JesseM": {
+        "hash": 320501359
+    },
+    "skin.StoryMode.JesseMArmored": {
+        "hash": 1746972812
+    },
+    "skin.StoryMode.JesseMA": {
+        "hash": 2387731743
+    },
+    "skin.StoryMode.JesseMAArmored": {
+        "hash": 1312560042
+    },
+    "skin.StoryMode.JesseMB": {
+        "hash": 2010363939
+    },
+    "skin.StoryMode.JesseMBArmored": {
+        "hash": 2627181377
+    },
+    "skin.StoryMode.Lukas": {
+        "hash": 3393136
+    },
+    "skin.StoryMode.Magnus": {
+        "hash": 1360919856
+    },
+    "skin.StoryMode.MagnusArmored": {
+        "hash": 505659023
+    },
+    "skin.StoryMode.Olivia": {
+        "hash": 2362136299
+    },
+    "skin.StoryMode.OliviaArmored": {
+        "hash": 1620342589
+    },
+    "skin.StoryMode.Petra": {
+        "hash": 3029953411
+    },
+    "skin.StoryMode.PetraArmored": {
+        "hash": 3325223260
+    },
+    "skin.StoryMode.Soren": {
+        "hash": 345430605
+    },
+    "skin.StoryMode.SorenArmored": {
+        "hash": 1193715324
+    },
+    "skins.buy.closeButton": {
+        "hash": 3959289206
+    },
+    "skins.buy.description": {
+        "hash": 3246184335
+    },
+    "skins.buy.purchaseFailed": {
+        "hash": 1937885084
+    },
+    "skins.buy.waitingForPurchase": {
+        "hash": 2712836021
+    },
+    "skins.custom": {
+        "hash": 2486602992
+    },
+    "skins.restore.description": {
+        "hash": 3293678461
+    },
+    "skins.restore.failed": {
+        "hash": 2600095958
+    },
+    "tile.stainedGlass.black.name": {
+        "hash": 4037994235
+    },
+    "tile.stainedGlass.blue.name": {
+        "hash": 1031612061
+    },
+    "tile.stainedGlass.brown.name": {
+        "hash": 365479909
+    },
+    "tile.stainedGlass.cyan.name": {
+        "hash": 3390626465
+    },
+    "tile.stainedGlass.gray.name": {
+        "hash": 4151106917
+    },
+    "tile.stainedGlass.green.name": {
+        "hash": 3338758947
+    },
+    "tile.stainedGlass.lightBlue.name": {
+        "hash": 3000910810
+    },
+    "tile.stainedGlass.lime.name": {
+        "hash": 2464571354
+    },
+    "tile.stainedGlass.magenta.name": {
+        "hash": 3343599778
+    },
+    "tile.stainedGlass.name": {
+        "hash": 3170172580
+    },
+    "tile.stainedGlass.orange.name": {
+        "hash": 1084344477
+    },
+    "tile.stainedGlass.pink.name": {
+        "hash": 4101237966
+    },
+    "tile.stainedGlass.purple.name": {
+        "hash": 2741594707
+    },
+    "tile.stainedGlass.red.name": {
+        "hash": 870532342
+    },
+    "tile.stainedGlass.silver.name": {
+        "hash": 2335763807
+    },
+    "tile.stainedGlass.white.name": {
+        "hash": 294636699
+    },
+    "tile.stainedGlass.yellow.name": {
+        "hash": 2837171486
+    },
+    "tile.thinStainedGlass.black.name": {
+        "hash": 1980269830
+    },
+    "tile.thinStainedGlass.blue.name": {
+        "hash": 237834053
+    },
+    "tile.thinStainedGlass.brown.name": {
+        "hash": 2061537660
+    },
+    "tile.thinStainedGlass.cyan.name": {
+        "hash": 3761091470
+    },
+    "tile.thinStainedGlass.gray.name": {
+        "hash": 3123011326
+    },
+    "tile.thinStainedGlass.green.name": {
+        "hash": 3635257940
+    },
+    "tile.thinStainedGlass.lightBlue.name": {
+        "hash": 2702101593
+    },
+    "tile.thinStainedGlass.lime.name": {
+        "hash": 2416488758
+    },
+    "tile.thinStainedGlass.magenta.name": {
+        "hash": 3886241699
+    },
+    "tile.thinStainedGlass.name": {
+        "hash": 3651656124
+    },
+    "tile.thinStainedGlass.orange.name": {
+        "hash": 1567265933
+    },
+    "tile.thinStainedGlass.pink.name": {
+        "hash": 226725047
+    },
+    "tile.thinStainedGlass.purple.name": {
+        "hash": 3695932834
+    },
+    "tile.thinStainedGlass.red.name": {
+        "hash": 4146037955
+    },
+    "tile.thinStainedGlass.silver.name": {
+        "hash": 2528295527
+    },
+    "tile.thinStainedGlass.white.name": {
+        "hash": 1303360667
+    },
+    "tile.thinStainedGlass.yellow.name": {
+        "hash": 714332762
     }
 }
