@@ -1,19 +1,5 @@
-from modules.MC3DSBlang import BlangFile
+from modules.MC3DSBlang import BlangFile, get_JOAAT_hash
 import sys, os, json
-
-def get_JOAAT_hash(string: bytes) -> int:
-    hash_ = 0
-    for char in string:
-        hash_ += char
-        hash_ &= 0xFFFFFFFF
-        hash_ += (hash_ << 10)
-        hash_ &= 0xFFFFFFFF
-        hash_ ^= (hash_ >> 6)
-    hash_ += (hash_ << 3)
-    hash_ &= 0xFFFFFFFF
-    hash_ ^= (hash_ >> 11)
-    hash_ += (hash_ << 15)
-    return hash_ & 0xFFFFFFFF
 
 if len(sys.argv) > 1:
     if os.path.exists(sys.argv[1]) and os.path.isfile(sys.argv[1]):
