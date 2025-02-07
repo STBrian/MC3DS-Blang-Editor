@@ -5908,5 +5908,3194 @@
     },
     "patch1.issue9": {
         "hash": 428056780
+    },
+    "gui.up": {
+        "hash": 2136657625
+    },
+    "gui.down": {
+        "hash": 3292176243
+    },
+    "achievement.diamonds": {
+        "hash": 337407161
+    },
+    "achievement.diamonds.desc": {
+        "hash": 1627535878
+    },
+    "achievement.diamondsToYou": {
+        "hash": 3948847866
+    },
+    "achievement.diamondsToYou.desc": {
+        "hash": 3584472551
+    },
+    "achievement.exploreAllBiomes": {
+        "hash": 913076379
+    },
+    "achievement.exploreAllBiomes.desc": {
+        "hash": 1833385095
+    },
+    "achievement.taken": {
+        "hash": 2278901353
+    },
+    "achievement.theEnd2": {
+        "hash": 2023302029
+    },
+    "achievement.theEnd2.desc": {
+        "hash": 1814629592
+    },
+    "achievementScreen.achievements:": {
+        "hash": 3002690100
+    },
+    "achievementScreen.gamerscore:": {
+        "hash": 7384084
+    },
+    "achievementScreen.hours": {
+        "hash": 413251838
+    },
+    "achievementScreen.timeplayed:": {
+        "hash": 36989689
+    },
+    "action.hint.exit.boat": {
+        "hash": 1111272255
+    },
+    "action.hint.exit.minecart": {
+        "hash": 2501584595
+    },
+    "action.hint.exit.pig": {
+        "hash": 2680016453
+    },
+    "action.hint.exit.horse": {
+        "hash": 3133689424
+    },
+    "action.hint.exit.donkey": {
+        "hash": 3372220741
+    },
+    "action.hint.exit.mule": {
+        "hash": 3673867372
+    },
+    "action.hint.exit.llama": {
+        "hash": 1232021820
+    },
+    "action.hint.exit.skeleton_horse": {
+        "hash": 3986598290
+    },
+    "action.interact.creeper": {
+        "hash": 182494539
+    },
+    "action.interact.exit.boat": {
+        "hash": 2648166598
+    },
+    "action.interact.milk": {
+        "hash": 3084225411
+    },
+    "action.interact.mooshear": {
+        "hash": 4039449045
+    },
+    "action.interact.moostew": {
+        "hash": 1337829908
+    },
+    "action.interact.ride.boat": {
+        "hash": 2249344541
+    },
+    "action.interact.ride.minecart": {
+        "hash": 1020710787
+    },
+    "action.interact.ride.horse": {
+        "hash": 2590425859
+    },
+    "action.interact.shear": {
+        "hash": 159334732
+    },
+    "action.interact.saddle": {
+        "hash": 136754048
+    },
+    "action.interact.mount": {
+        "hash": 3851475234
+    },
+    "action.interact.write": {
+        "hash": 3788747794
+    },
+    "attribute.modifier.plus.0": {
+        "hash": 783534548
+    },
+    "attribute.modifier.plus.1": {
+        "hash": 2074829766
+    },
+    "attribute.modifier.plus.2": {
+        "hash": 1240563795
+    },
+    "attribute.modifier.take.0": {
+        "hash": 4274450742
+    },
+    "attribute.modifier.take.1": {
+        "hash": 3924969353
+    },
+    "attribute.modifier.take.2": {
+        "hash": 4157530946
+    },
+    "attribute.name.generic.maxHealth": {
+        "hash": 4114280161
+    },
+    "attribute.name.generic.attackDamage": {
+        "hash": 1372354311
+    },
+    "attribute.name.generic.knockbackResistance": {
+        "hash": 3317959996
+    },
+    "attribute.name.horse.jumpStrength": {
+        "hash": 1674661944
+    },
+    "attribute.name.zombie.spawnReinforcements": {
+        "hash": 332495393
+    },
+    "book.byAuthor": {
+        "hash": 2865096926
+    },
+    "book.editTitle": {
+        "hash": 2713832285
+    },
+    "book.finalizeButton": {
+        "hash": 4158815584
+    },
+    "book.finalizeWarning": {
+        "hash": 3342703051
+    },
+    "book.generation.0": {
+        "hash": 73016306
+    },
+    "book.generation.1": {
+        "hash": 4127754063
+    },
+    "book.generation.2": {
+        "hash": 706211693
+    },
+    "book.generation.3": {
+        "hash": 3418895055
+    },
+    "book.pageIndicator": {
+        "hash": 670799510
+    },
+    "book.signButton": {
+        "hash": 1170869566
+    },
+    "chalkboardScreen.header": {
+        "hash": 1996478281
+    },
+    "cauldronScreen.header": {
+        "hash": 430582955
+    },
+    "commands.blockdata.placeFailed": {
+        "hash": 865061863
+    },
+    "commands.blockdata.destroyFailed": {
+        "hash": 3965205760
+    },
+    "commands.blockdata.failed": {
+        "hash": 2151453582
+    },
+    "commands.blockdata.notValid": {
+        "hash": 1437495367
+    },
+    "commands.blockdata.outOfWorld": {
+        "hash": 2003612859
+    },
+    "commands.blockdata.success": {
+        "hash": 1117632320
+    },
+    "commands.blockdata.tagError": {
+        "hash": 2297795162
+    },
+    "commands.chunkinfo.compiled": {
+        "hash": 2512164552
+    },
+    "commands.chunkinfo.data": {
+        "hash": 996730864
+    },
+    "commands.chunkinfo.empty": {
+        "hash": 255089611
+    },
+    "commands.chunkinfo.hasLayers": {
+        "hash": 1643611806
+    },
+    "commands.chunkinfo.hasNoRenderableLayers": {
+        "hash": 1537808493
+    },
+    "commands.chunkinfo.isEmpty": {
+        "hash": 2379042507
+    },
+    "commands.chunkinfo.location": {
+        "hash": 436930541
+    },
+    "commands.chunkinfo.noChunk": {
+        "hash": 985479299
+    },
+    "commands.chunkinfo.notCompiled": {
+        "hash": 754242109
+    },
+    "commands.chunkinfo.notEmpty": {
+        "hash": 3729604598
+    },
+    "commands.chunkinfo.vertices": {
+        "hash": 3740126222
+    },
+    "commands.clear.failure": {
+        "hash": 3219496609
+    },
+    "commands.clear.success": {
+        "hash": 1372176043
+    },
+    "commands.clear.tagError": {
+        "hash": 3312781829
+    },
+    "commands.clear.testing": {
+        "hash": 1311067944
+    },
+    "commands.clone.failed": {
+        "hash": 1042501690
+    },
+    "commands.clone.noOverlap": {
+        "hash": 2391095274
+    },
+    "commands.clone.success": {
+        "hash": 2696900983
+    },
+    "commands.clone.tooManyBlocks": {
+        "hash": 791420342
+    },
+    "commands.compare.failed": {
+        "hash": 2306098955
+    },
+    "commands.compare.success": {
+        "hash": 857942243
+    },
+    "commands.compare.tooManyBlocks": {
+        "hash": 527351039
+    },
+    "commands.debug.notStarted": {
+        "hash": 1577467063
+    },
+    "commands.debug.start": {
+        "hash": 2034426271
+    },
+    "commands.debug.stop": {
+        "hash": 1370394059
+    },
+    "commands.defaultgamemode.success": {
+        "hash": 463061193
+    },
+    "commands.deop.failed": {
+        "hash": 406884517
+    },
+    "commands.deop.success": {
+        "hash": 3973703038
+    },
+    "commands.deop.message": {
+        "hash": 93451341
+    },
+    "commands.difficulty.usage": {
+        "hash": 3034785823
+    },
+    "commands.difficulty.success": {
+        "hash": 2825657301
+    },
+    "commands.downfall.success": {
+        "hash": 1834318736
+    },
+    "commands.effect.failure.notActive": {
+        "hash": 3250934089
+    },
+    "commands.effect.failure.notActive.all": {
+        "hash": 2329626300
+    },
+    "commands.effect.notFound": {
+        "hash": 2324535521
+    },
+    "commands.effect.success": {
+        "hash": 4252344003
+    },
+    "commands.effect.success.removed": {
+        "hash": 1903156906
+    },
+    "commands.effect.success.removed.all": {
+        "hash": 3468662693
+    },
+    "commands.enchant.cantCombine": {
+        "hash": 364997273
+    },
+    "commands.enchant.cantEnchant": {
+        "hash": 184719206
+    },
+    "commands.enchant.noItem": {
+        "hash": 2616380528
+    },
+    "commands.enchant.notFound": {
+        "hash": 1285164219
+    },
+    "commands.enchant.success": {
+        "hash": 1342585006
+    },
+    "commands.entitydata.failed": {
+        "hash": 1614388059
+    },
+    "commands.entitydata.noPlayers": {
+        "hash": 1282833577
+    },
+    "commands.entitydata.success": {
+        "hash": 3955197782
+    },
+    "commands.entitydata.tagError": {
+        "hash": 1491564643
+    },
+    "commands.execute.allInvocationsFailed": {
+        "hash": 2775501792
+    },
+    "commands.execute.failed": {
+        "hash": 235627011
+    },
+    "commands.fill.failed": {
+        "hash": 4291970441
+    },
+    "commands.fill.outOfWorld": {
+        "hash": 1939189647
+    },
+    "commands.fill.success": {
+        "hash": 3195827060
+    },
+    "commands.fill.tagError": {
+        "hash": 2232711700
+    },
+    "commands.fill.tooManyBlocks": {
+        "hash": 3165268020
+    },
+    "commands.gamemode.success.other": {
+        "hash": 3964792603
+    },
+    "commands.gamemode.success.self": {
+        "hash": 2958626757
+    },
+    "commands.gamemode.fail.invalid": {
+        "hash": 3338845056
+    },
+    "commands.gamerule.nopermission": {
+        "hash": 1305534782
+    },
+    "commands.gamerule.norule": {
+        "hash": 3458788841
+    },
+    "commands.gamerule.success": {
+        "hash": 2825320226
+    },
+    "commands.generic.boolean.invalid": {
+        "hash": 3859658738
+    },
+    "commands.generic.double.tooBig": {
+        "hash": 3979762368
+    },
+    "commands.generic.double.tooSmall": {
+        "hash": 918483871
+    },
+    "commands.generic.entity.invalidType": {
+        "hash": 3458919686
+    },
+    "commands.generic.entity.invalidUuid": {
+        "hash": 2069353011
+    },
+    "commands.generic.entity.notFound": {
+        "hash": 3378011096
+    },
+    "commands.generic.num.invalid": {
+        "hash": 480755851
+    },
+    "commands.generic.num.tooBig": {
+        "hash": 3660399039
+    },
+    "commands.generic.num.tooSmall": {
+        "hash": 1002936359
+    },
+    "commands.generic.parameter.invalid": {
+        "hash": 4185237468
+    },
+    "commands.generic.player.notFound": {
+        "hash": 3928759591
+    },
+    "commands.generic.usage": {
+        "hash": 2792763494
+    },
+    "commands.give.block.notFound": {
+        "hash": 2459428022
+    },
+    "commands.give.item.notFound": {
+        "hash": 2504167636
+    },
+    "commands.give.success": {
+        "hash": 3669155625
+    },
+    "commands.give.tagError": {
+        "hash": 2043346296
+    },
+    "commands.help.footer": {
+        "hash": 1970411385
+    },
+    "commands.help.header": {
+        "hash": 2363400012
+    },
+    "commands.kick.success": {
+        "hash": 3480889852
+    },
+    "commands.kick.success.reason": {
+        "hash": 715140159
+    },
+    "commands.kill.successful": {
+        "hash": 3073315436
+    },
+    "commands.message.display.outgoing": {
+        "hash": 4047892220
+    },
+    "commands.message.sameTarget": {
+        "hash": 3381141961
+    },
+    "commands.op.failed": {
+        "hash": 1021266906
+    },
+    "commands.op.success": {
+        "hash": 3380129111
+    },
+    "commands.op.message": {
+        "hash": 2996948560
+    },
+    "commands.particle.notFound": {
+        "hash": 1641384404
+    },
+    "commands.particle.success": {
+        "hash": 833277897
+    },
+    "commands.players.list": {
+        "hash": 227739086
+    },
+    "commands.playsound.playerTooFar": {
+        "hash": 4096554195
+    },
+    "commands.playsound.success": {
+        "hash": 711625201
+    },
+    "commands.publish.failed": {
+        "hash": 1825852451
+    },
+    "commands.publish.started": {
+        "hash": 2658730112
+    },
+    "commands.replaceitem.failed": {
+        "hash": 3916547791
+    },
+    "commands.replaceitem.noContainer": {
+        "hash": 351652597
+    },
+    "commands.replaceitem.success": {
+        "hash": 1470401371
+    },
+    "commands.replaceitem.tagError": {
+        "hash": 3850774069
+    },
+    "commands.save.disabled": {
+        "hash": 878837827
+    },
+    "commands.save.enabled": {
+        "hash": 3955756673
+    },
+    "commands.save.failed": {
+        "hash": 2405928939
+    },
+    "commands.save.start": {
+        "hash": 951256230
+    },
+    "commands.save.success": {
+        "hash": 64005842
+    },
+    "commands.save-off.alreadyOff": {
+        "hash": 17385193
+    },
+    "commands.save-on.alreadyOn": {
+        "hash": 2398422404
+    },
+    "commands.seed.success": {
+        "hash": 1189026551
+    },
+    "commands.setblock.failed": {
+        "hash": 131861668
+    },
+    "commands.setblock.noChange": {
+        "hash": 1425887885
+    },
+    "commands.setblock.notFound": {
+        "hash": 4013325350
+    },
+    "commands.setblock.outOfWorld": {
+        "hash": 741321525
+    },
+    "commands.setblock.success": {
+        "hash": 2164085589
+    },
+    "commands.setblock.tagError": {
+        "hash": 3110308687
+    },
+    "commands.setidletimeout.success": {
+        "hash": 2016603129
+    },
+    "commands.setfixedinvslots.description": {
+        "hash": 1538014916
+    },
+    "commands.setfixedinvslots.success": {
+        "hash": 1123868695
+    },
+    "commands.setfixedinvslot.description": {
+        "hash": 679320281
+    },
+    "commands.setfixedinvslot.success": {
+        "hash": 926726379
+    },
+    "commands.setworldspawn.success": {
+        "hash": 3794717326
+    },
+    "commands.spawnpoint.success.single": {
+        "hash": 3200851474
+    },
+    "commands.spawnpoint.success.multiple.specific": {
+        "hash": 2984194921
+    },
+    "commands.spawnpoint.success.multiple.generic": {
+        "hash": 1071100782
+    },
+    "commands.spreadplayers.failure.players": {
+        "hash": 594549197
+    },
+    "commands.spreadplayers.failure.teams": {
+        "hash": 3994468108
+    },
+    "commands.spreadplayers.info.players": {
+        "hash": 2545310084
+    },
+    "commands.spreadplayers.info.teams": {
+        "hash": 1003707992
+    },
+    "commands.spreadplayers.spreading.players": {
+        "hash": 287592687
+    },
+    "commands.spreadplayers.spreading.teams": {
+        "hash": 3987947317
+    },
+    "commands.spreadplayers.success.players": {
+        "hash": 229384619
+    },
+    "commands.spreadplayers.success.teams": {
+        "hash": 2133845725
+    },
+    "commands.stats.cleared": {
+        "hash": 48670410
+    },
+    "commands.stats.failed": {
+        "hash": 2364660113
+    },
+    "commands.stats.noCompatibleBlock": {
+        "hash": 2678196653
+    },
+    "commands.stats.success": {
+        "hash": 2825406885
+    },
+    "commands.summon.failed": {
+        "hash": 2972022914
+    },
+    "commands.summon.outOfWorld": {
+        "hash": 47427424
+    },
+    "commands.summon.success": {
+        "hash": 310060291
+    },
+    "commands.summon.tagError": {
+        "hash": 3508555519
+    },
+    "commands.tellraw.jsonException": {
+        "hash": 2530638330
+    },
+    "commands.testfor.failure": {
+        "hash": 1559282689
+    },
+    "commands.testfor.success": {
+        "hash": 872251836
+    },
+    "commands.testfor.tagError": {
+        "hash": 2023565612
+    },
+    "commands.testforblock.failed.data": {
+        "hash": 1675973367
+    },
+    "commands.testforblock.failed.nbt": {
+        "hash": 1415710256
+    },
+    "commands.testforblock.failed.tile": {
+        "hash": 2604587969
+    },
+    "commands.testforblock.failed.tileEntity": {
+        "hash": 156529468
+    },
+    "commands.testforblock.outOfWorld": {
+        "hash": 2809521880
+    },
+    "commands.testforblock.success": {
+        "hash": 1085241857
+    },
+    "commands.time.added": {
+        "hash": 3611761171
+    },
+    "commands.time.set": {
+        "hash": 3869901464
+    },
+    "commands.title.success": {
+        "hash": 265653302
+    },
+    "commands.tp.notSameDimension": {
+        "hash": 814616701
+    },
+    "commands.tp.success": {
+        "hash": 3242907484
+    },
+    "commands.tp.success.coordinates": {
+        "hash": 2458246499
+    },
+    "commands.trigger.disabled": {
+        "hash": 3997700298
+    },
+    "commands.trigger.invalidMode": {
+        "hash": 461216506
+    },
+    "commands.trigger.invalidObjective": {
+        "hash": 3589725329
+    },
+    "commands.trigger.invalidPlayer": {
+        "hash": 2483720240
+    },
+    "commands.trigger.success": {
+        "hash": 2846415074
+    },
+    "commands.weather.clear": {
+        "hash": 1963705115
+    },
+    "commands.weather.rain": {
+        "hash": 793661405
+    },
+    "commands.weather.thunder": {
+        "hash": 1212663202
+    },
+    "commands.whitelist.add.failed": {
+        "hash": 2037576402
+    },
+    "commands.whitelist.add.success": {
+        "hash": 2345482750
+    },
+    "commands.whitelist.disabled": {
+        "hash": 3958943417
+    },
+    "commands.whitelist.enabled": {
+        "hash": 3145707622
+    },
+    "commands.whitelist.list": {
+        "hash": 4121515844
+    },
+    "commands.whitelist.reloaded": {
+        "hash": 3971431771
+    },
+    "commands.whitelist.remove.failed": {
+        "hash": 3297956920
+    },
+    "commands.whitelist.remove.success": {
+        "hash": 4185369702
+    },
+    "commands.worldborder.center.success": {
+        "hash": 958083821
+    },
+    "commands.worldborder.damage.amount.success": {
+        "hash": 837760364
+    },
+    "commands.worldborder.damage.buffer.success": {
+        "hash": 2853223724
+    },
+    "commands.worldborder.get.success": {
+        "hash": 3055640905
+    },
+    "commands.worldborder.set.success": {
+        "hash": 963016364
+    },
+    "commands.worldborder.setSlowly.grow.success": {
+        "hash": 3735498325
+    },
+    "commands.worldborder.setSlowly.shrink.success": {
+        "hash": 3080479037
+    },
+    "commands.worldborder.warning.distance.success": {
+        "hash": 4276493837
+    },
+    "commands.worldborder.warning.time.success": {
+        "hash": 2687913084
+    },
+    "commands.xp.failure.widthdrawXp": {
+        "hash": 2324891589
+    },
+    "commands.xp.success": {
+        "hash": 381392341
+    },
+    "commands.xp.success.levels": {
+        "hash": 148137707
+    },
+    "commands.xp.success.negative.levels": {
+        "hash": 2551801160
+    },
+    "connect.authorizing": {
+        "hash": 1981060936
+    },
+    "container.beacon": {
+        "hash": 3679229266
+    },
+    "container.brewing": {
+        "hash": 717196458
+    },
+    "container.enchant": {
+        "hash": 581835518
+    },
+    "container.furnace": {
+        "hash": 2480062513
+    },
+    "container.isLocked": {
+        "hash": 3928256074
+    },
+    "container.minecart": {
+        "hash": 1218200620
+    },
+    "container.stonecutter": {
+        "hash": 186417485
+    },
+    "controller.buttonTip.addItem": {
+        "hash": 1832584404
+    },
+    "controller.buttonTip.adjustSlider": {
+        "hash": 4220655492
+    },
+    "controller.buttonTip.backToAnvil": {
+        "hash": 470415198
+    },
+    "controller.buttonTip.backToBrewing": {
+        "hash": 3969464944
+    },
+    "controller.buttonTip.backToFurnace": {
+        "hash": 2576716228
+    },
+    "controller.buttonTip.edit": {
+        "hash": 3397107255
+    },
+    "controller.buttonTip.enterMessage": {
+        "hash": 1280357748
+    },
+    "controller.buttonTip.external": {
+        "hash": 2601563233
+    },
+    "controller.buttonTip.level": {
+        "hash": 1132454462
+    },
+    "controller.buttonTip.new": {
+        "hash": 279933857
+    },
+    "controller.buttonTip.place": {
+        "hash": 3956688792
+    },
+    "controller.buttonTip.removeFuel": {
+        "hash": 4226094733
+    },
+    "controller.buttonTip.removeFuelInput": {
+        "hash": 1069391106
+    },
+    "controller.buttonTip.removeInput": {
+        "hash": 4193343014
+    },
+    "controller.buttonTip.removeMaterial": {
+        "hash": 269839376
+    },
+    "controller.buttonTip.renameItem": {
+        "hash": 1634605207
+    },
+    "controller.buttonTip.select.enchant": {
+        "hash": 367157907
+    },
+    "controller.buttonTip.select.item": {
+        "hash": 1961919713
+    },
+    "controller.buttonTip.select.slot": {
+        "hash": 3104952245
+    },
+    "controller.buttonTip.tab": {
+        "hash": 1438591843
+    },
+    "controller.buttonTip.takeItem": {
+        "hash": 1618606459
+    },
+    "controllerLayoutScreen.actions": {
+        "hash": 3477085502
+    },
+    "controllerLayoutScreen.bindings": {
+        "hash": 2226050228
+    },
+    "controllerLayoutScreen.button": {
+        "hash": 2871870642
+    },
+    "controllerLayoutScreen.cancel": {
+        "hash": 700055755
+    },
+    "controllerLayoutScreen.confirmation.reset": {
+        "hash": 2249034061
+    },
+    "controllerLayoutScreen.confirmation.unassigned": {
+        "hash": 3521440790
+    },
+    "controllerLayoutScreen.confirmation.unsaved": {
+        "hash": 3058557336
+    },
+    "controllerLayoutScreen.save": {
+        "hash": 1965421711
+    },
+    "controllerLayoutScreen.saveAndExit": {
+        "hash": 1787249791
+    },
+    "controllerLayoutScreen.trigger": {
+        "hash": 3505691518
+    },
+    "controllerLayoutScreen.unassigned": {
+        "hash": 2996616840
+    },
+    "controllerLayoutScreen.toggleLivingroom": {
+        "hash": 513316244
+    },
+    "controls.reset": {
+        "hash": 4058905549
+    },
+    "controls.resetAll": {
+        "hash": 3939168712
+    },
+    "controls.title": {
+        "hash": 3703762259
+    },
+    "crafting.badCombination": {
+        "hash": 3672967650
+    },
+    "crafting.cannotCreate": {
+        "hash": 2682312307
+    },
+    "crafting.insufficientLevel": {
+        "hash": 1401645887
+    },
+    "crafting.noRecipesInventory": {
+        "hash": 794817566
+    },
+    "crafting.noRecipesStonecutter": {
+        "hash": 4241878423
+    },
+    "crafting.noRecipesWorkbench": {
+        "hash": 1137820185
+    },
+    "createWorld.customize.custom.baseSize": {
+        "hash": 2915522123
+    },
+    "createWorld.customize.custom.biomeDepthOffset": {
+        "hash": 1671075610
+    },
+    "createWorld.customize.custom.biomeDepthWeight": {
+        "hash": 2250390733
+    },
+    "createWorld.customize.custom.biomeScaleOffset": {
+        "hash": 3285173516
+    },
+    "createWorld.customize.custom.biomeScaleWeight": {
+        "hash": 465861614
+    },
+    "createWorld.customize.custom.biomeSize": {
+        "hash": 3612838247
+    },
+    "createWorld.customize.custom.center": {
+        "hash": 1233888539
+    },
+    "createWorld.customize.custom.confirm1": {
+        "hash": 2972337631
+    },
+    "createWorld.customize.custom.confirm2": {
+        "hash": 3779601946
+    },
+    "createWorld.customize.custom.confirmTitle": {
+        "hash": 3453366230
+    },
+    "createWorld.customize.custom.coordinateScale": {
+        "hash": 1619263678
+    },
+    "createWorld.customize.custom.count": {
+        "hash": 1225869615
+    },
+    "createWorld.customize.custom.defaults": {
+        "hash": 3936045046
+    },
+    "createWorld.customize.custom.depthNoiseScaleExponent": {
+        "hash": 4185437716
+    },
+    "createWorld.customize.custom.depthNoiseScaleX": {
+        "hash": 477811595
+    },
+    "createWorld.customize.custom.depthNoiseScaleZ": {
+        "hash": 1252028
+    },
+    "createWorld.customize.custom.dungeonChance": {
+        "hash": 3439047142
+    },
+    "createWorld.customize.custom.fixedBiome": {
+        "hash": 1512570130
+    },
+    "createWorld.customize.custom.heightScale": {
+        "hash": 3930660768
+    },
+    "createWorld.customize.custom.lavaLakeChance": {
+        "hash": 1228879055
+    },
+    "createWorld.customize.custom.lowerLimitScale": {
+        "hash": 773958268
+    },
+    "createWorld.customize.custom.mainNoiseScaleX": {
+        "hash": 2114939370
+    },
+    "createWorld.customize.custom.mainNoiseScaleY": {
+        "hash": 1266156732
+    },
+    "createWorld.customize.custom.mainNoiseScaleZ": {
+        "hash": 1496490033
+    },
+    "createWorld.customize.custom.maxHeight": {
+        "hash": 4180249842
+    },
+    "createWorld.customize.custom.minHeight": {
+        "hash": 3610593149
+    },
+    "createWorld.customize.custom.next": {
+        "hash": 895269383
+    },
+    "createWorld.customize.custom.page0": {
+        "hash": 905674254
+    },
+    "createWorld.customize.custom.page1": {
+        "hash": 27399516
+    },
+    "createWorld.customize.custom.page2": {
+        "hash": 1582943950
+    },
+    "createWorld.customize.custom.page3": {
+        "hash": 1814784625
+    },
+    "createWorld.customize.custom.preset.caveChaos": {
+        "hash": 71708217
+    },
+    "createWorld.customize.custom.preset.caveDelight": {
+        "hash": 79786509
+    },
+    "createWorld.customize.custom.preset.drought": {
+        "hash": 4226355506
+    },
+    "createWorld.customize.custom.preset.goodLuck": {
+        "hash": 2901635042
+    },
+    "createWorld.customize.custom.preset.isleLand": {
+        "hash": 3730961157
+    },
+    "createWorld.customize.custom.preset.mountains": {
+        "hash": 922699785
+    },
+    "createWorld.customize.custom.preset.waterWorld": {
+        "hash": 3359159139
+    },
+    "createWorld.customize.custom.presets": {
+        "hash": 3531508704
+    },
+    "createWorld.customize.custom.presets.title": {
+        "hash": 4126074808
+    },
+    "createWorld.customize.custom.prev": {
+        "hash": 3022762618
+    },
+    "createWorld.customize.custom.randomize": {
+        "hash": 1725687659
+    },
+    "createWorld.customize.custom.riverSize": {
+        "hash": 3927601877
+    },
+    "createWorld.customize.custom.seaLevel": {
+        "hash": 3380936833
+    },
+    "createWorld.customize.custom.size": {
+        "hash": 3820390781
+    },
+    "createWorld.customize.custom.spread": {
+        "hash": 216057382
+    },
+    "createWorld.customize.custom.stretchY": {
+        "hash": 1229149992
+    },
+    "createWorld.customize.custom.upperLimitScale": {
+        "hash": 2338195570
+    },
+    "createWorld.customize.custom.useCaves": {
+        "hash": 4156956981
+    },
+    "createWorld.customize.custom.useDungeons": {
+        "hash": 3819713962
+    },
+    "createWorld.customize.custom.useLavaLakes": {
+        "hash": 1773273071
+    },
+    "createWorld.customize.custom.useLavaOceans": {
+        "hash": 2378355089
+    },
+    "createWorld.customize.custom.useMineShafts": {
+        "hash": 1535877845
+    },
+    "createWorld.customize.custom.useMonuments": {
+        "hash": 359633426
+    },
+    "createWorld.customize.custom.useRavines": {
+        "hash": 4003370380
+    },
+    "createWorld.customize.custom.useStrongholds": {
+        "hash": 2521264965
+    },
+    "createWorld.customize.custom.useTemples": {
+        "hash": 3990170212
+    },
+    "createWorld.customize.custom.useVillages": {
+        "hash": 1268856799
+    },
+    "createWorld.customize.custom.useWaterLakes": {
+        "hash": 1058982657
+    },
+    "createWorld.customize.custom.waterLakeChance": {
+        "hash": 3156465218
+    },
+    "createWorld.customize.flat.addLayer": {
+        "hash": 1472646352
+    },
+    "createWorld.customize.flat.editLayer": {
+        "hash": 901947476
+    },
+    "createWorld.customize.flat.height": {
+        "hash": 2038956288
+    },
+    "createWorld.customize.flat.layer": {
+        "hash": 3619856065
+    },
+    "createWorld.customize.flat.layer.bottom": {
+        "hash": 540005701
+    },
+    "createWorld.customize.flat.layer.top": {
+        "hash": 2404661361
+    },
+    "createWorld.customize.flat.removeLayer": {
+        "hash": 3404549267
+    },
+    "createWorld.customize.flat.tile": {
+        "hash": 2578107030
+    },
+    "createWorld.customize.flat.title": {
+        "hash": 312048905
+    },
+    "createWorld.customize.presets": {
+        "hash": 298541459
+    },
+    "createWorld.customize.presets.list": {
+        "hash": 1856239929
+    },
+    "createWorld.customize.presets.select": {
+        "hash": 1922988660
+    },
+    "createWorld.customize.presets.share": {
+        "hash": 2872914028
+    },
+    "createWorld.customize.presets.title": {
+        "hash": 3354627895
+    },
+    "createWorldScreen.action.editLocal": {
+        "hash": 2805915570
+    },
+    "createWorldScreen.action.local": {
+        "hash": 3121914967
+    },
+    "createWorldScreen.action.realms": {
+        "hash": 2817875058
+    },
+    "createWorldScreen.action.realmsReset": {
+        "hash": 3854454299
+    },
+    "createWorldScreen.advanced": {
+        "hash": 3615592418
+    },
+    "createWorldScreen.delete": {
+        "hash": 3941597131
+    },
+    "createWorldScreen.delete.desc": {
+        "hash": 3371340215
+    },
+    "createWorldScreen.delete.confirm": {
+        "hash": 2788633540
+    },
+    "createWorldScreen.game.settings": {
+        "hash": 2820961661
+    },
+    "createWorldScreen.gameMode.creative.desc": {
+        "hash": 135096381
+    },
+    "createWorldScreen.gameMode.survival.desc": {
+        "hash": 1586681535
+    },
+    "createWorldScreen.header.delete": {
+        "hash": 779934058
+    },
+    "createWorldScreen.header.local": {
+        "hash": 3841564877
+    },
+    "createWorldScreen.header.realms": {
+        "hash": 1408829443
+    },
+    "createWorldScreen.header.realmsReset": {
+        "hash": 338571628
+    },
+    "createWorldScreen.multiplayer.settings": {
+        "hash": 2297055660
+    },
+    "createWorldScreen.progress.local": {
+        "hash": 2542833415
+    },
+    "createWorldScreen.progress.realms": {
+        "hash": 1759875488
+    },
+    "createWorldScreen.seed.desc": {
+        "hash": 1579245552
+    },
+    "death.attack.arrow.item": {
+        "hash": 1104352185
+    },
+    "death.attack.cactus.player": {
+        "hash": 2420629987
+    },
+    "death.attack.drown.player": {
+        "hash": 3239473601
+    },
+    "death.attack.fallingBlock": {
+        "hash": 1770722843
+    },
+    "death.attack.fireball": {
+        "hash": 3089065986
+    },
+    "death.attack.fireball.item": {
+        "hash": 2334531348
+    },
+    "death.attack.indirectMagic.item": {
+        "hash": 560879842
+    },
+    "death.attack.inFire.player": {
+        "hash": 426985876
+    },
+    "death.attack.lava.player": {
+        "hash": 3344395543
+    },
+    "death.attack.lightningBolt": {
+        "hash": 721985254
+    },
+    "death.attack.magma.player": {
+        "hash": 2128359634
+    },
+    "death.attack.onFire.player": {
+        "hash": 1422567044
+    },
+    "death.attack.player.item": {
+        "hash": 10862795
+    },
+    "death.attack.thorns": {
+        "hash": 1169980133
+    },
+    "death.attack.thrown": {
+        "hash": 3429815819
+    },
+    "death.attack.thrown.item": {
+        "hash": 1340402552
+    },
+    "death.fell.accident.generic": {
+        "hash": 1418618597
+    },
+    "death.fell.accident.ladder": {
+        "hash": 3780747261
+    },
+    "death.fell.accident.vines": {
+        "hash": 740126332
+    },
+    "death.fell.accident.water": {
+        "hash": 3428496174
+    },
+    "death.fell.assist": {
+        "hash": 1435552597
+    },
+    "death.fell.assist.item": {
+        "hash": 2455551148
+    },
+    "death.fell.finish": {
+        "hash": 317696641
+    },
+    "death.fell.finish.item": {
+        "hash": 3643372596
+    },
+    "death.fell.killer": {
+        "hash": 866779119
+    },
+    "deathScreen.deleteWorld": {
+        "hash": 290823229
+    },
+    "deathScreen.hardcoreInfo": {
+        "hash": 1537277530
+    },
+    "deathScreen.leaveServer": {
+        "hash": 2231842339
+    },
+    "deathScreen.quit.confirm": {
+        "hash": 3904047522
+    },
+    "deathScreen.score": {
+        "hash": 2988629724
+    },
+    "deathScreen.title": {
+        "hash": 514981738
+    },
+    "deathScreen.title.hardcore": {
+        "hash": 1637152648
+    },
+    "deathScreen.titleScreen": {
+        "hash": 2487651983
+    },
+    "difficulty.lock.question": {
+        "hash": 3525201039
+    },
+    "difficulty.lock.title": {
+        "hash": 333481957
+    },
+    "enchantment.level.1": {
+        "hash": 519002116
+    },
+    "enchantment.level.10": {
+        "hash": 3636223869
+    },
+    "enchantment.level.2": {
+        "hash": 168537661
+    },
+    "enchantment.level.3": {
+        "hash": 4225143251
+    },
+    "enchantment.level.4": {
+        "hash": 3628485299
+    },
+    "enchantment.level.5": {
+        "hash": 2314153478
+    },
+    "enchantment.level.6": {
+        "hash": 3508681835
+    },
+    "enchantment.level.7": {
+        "hash": 3872483273
+    },
+    "enchantment.level.8": {
+        "hash": 963710271
+    },
+    "enchantment.level.9": {
+        "hash": 1740564954
+    },
+    "entity.area_effect_cloud.name": {
+        "hash": 690106526
+    },
+    "entity.armor_stand.name": {
+        "hash": 971881642
+    },
+    "entity.arrow.name": {
+        "hash": 526316706
+    },
+    "entity.bat.name": {
+        "hash": 2243159659
+    },
+    "entity.blaze.name": {
+        "hash": 4142167142
+    },
+    "entity.boat.name": {
+        "hash": 3637520988
+    },
+    "entity.cave_spider.name": {
+        "hash": 982631286
+    },
+    "entity.chicken.name": {
+        "hash": 3431390617
+    },
+    "entity.cow.name": {
+        "hash": 3582079749
+    },
+    "entity.creeper.name": {
+        "hash": 1795897630
+    },
+    "entity.dragon_fireball.name": {
+        "hash": 3794672723
+    },
+    "entity.egg.name": {
+        "hash": 1713631347
+    },
+    "entity.elder_guardian.name": {
+        "hash": 3846488698
+    },
+    "entity.ender_crystal.name": {
+        "hash": 857437984
+    },
+    "entity.enderman.name": {
+        "hash": 3691622523
+    },
+    "entity.endermite.name": {
+        "hash": 3612306937
+    },
+    "entity.ender_pearl.name": {
+        "hash": 2874341642
+    },
+    "entity.evocation_illager.name": {
+        "hash": 4100281361
+    },
+    "entity.eye_of_ender_signal.name": {
+        "hash": 4110425230
+    },
+    "entity.falling_block.name": {
+        "hash": 1856397840
+    },
+    "entity.fireball.name": {
+        "hash": 3414761007
+    },
+    "entity.fishing_hook.name": {
+        "hash": 2347808445
+    },
+    "entity.ghast.name": {
+        "hash": 1881163930
+    },
+    "entity.guardian.name": {
+        "hash": 2432170858
+    },
+    "entity.husk.name": {
+        "hash": 2963849321
+    },
+    "entity.iron_golem.name": {
+        "hash": 4026669878
+    },
+    "entity.item.name": {
+        "hash": 1675695348
+    },
+    "entity.magma_cube.name": {
+        "hash": 867313229
+    },
+    "entity.minecart.name": {
+        "hash": 3613683687
+    },
+    "entity.chest_minecart.name": {
+        "hash": 3845779510
+    },
+    "entity.hopper_minecart.name": {
+        "hash": 3671991701
+    },
+    "entity.tnt_minecart.name": {
+        "hash": 2257211203
+    },
+    "entity.mooshroom.name": {
+        "hash": 2127113423
+    },
+    "entity.ocelot.name": {
+        "hash": 3899120642
+    },
+    "entity.painting.name": {
+        "hash": 2409767224
+    },
+    "entity.pig.name": {
+        "hash": 1250326554
+    },
+    "entity.polar_bear.name": {
+        "hash": 813785049
+    },
+    "entity.rabbit.name": {
+        "hash": 118185296
+    },
+    "entity.sheep.name": {
+        "hash": 2731180071
+    },
+    "entity.shulker.name": {
+        "hash": 4201672210
+    },
+    "entity.shulker_bullet.name": {
+        "hash": 2792989794
+    },
+    "entity.silverfish.name": {
+        "hash": 1482006727
+    },
+    "entity.skeleton.name": {
+        "hash": 2477208995
+    },
+    "entity.stray.name": {
+        "hash": 2431226781
+    },
+    "entity.slime.name": {
+        "hash": 3504369369
+    },
+    "entity.small_fireball.name": {
+        "hash": 1888782965
+    },
+    "entity.snowball.name": {
+        "hash": 1659806797
+    },
+    "entity.snow_golem.name": {
+        "hash": 2302354729
+    },
+    "entity.spider.name": {
+        "hash": 572094079
+    },
+    "entity.splash_potion.name": {
+        "hash": 1227700488
+    },
+    "entity.squid.name": {
+        "hash": 4064987629
+    },
+    "entity.tnt.name": {
+        "hash": 522299276
+    },
+    "entity.unknown.name": {
+        "hash": 3247763052
+    },
+    "entity.vex.name": {
+        "hash": 1146298577
+    },
+    "entity.villager.name": {
+        "hash": 1509852470
+    },
+    "entity.villager.armor": {
+        "hash": 3659760903
+    },
+    "entity.villager.butcher": {
+        "hash": 255712358
+    },
+    "entity.villager.cartographer": {
+        "hash": 1130074205
+    },
+    "entity.villager.cleric": {
+        "hash": 3508590457
+    },
+    "entity.villager.farmer": {
+        "hash": 2391053309
+    },
+    "entity.villager.fisherman": {
+        "hash": 2127405207
+    },
+    "entity.villager.fletcher": {
+        "hash": 1677585362
+    },
+    "entity.villager.leather": {
+        "hash": 14716796
+    },
+    "entity.villager.librarian": {
+        "hash": 4145057921
+    },
+    "entity.villager.shepherd": {
+        "hash": 2325605166
+    },
+    "entity.villager.tool": {
+        "hash": 2583494086
+    },
+    "entity.villager.weapon": {
+        "hash": 3197062750
+    },
+    "entity.vindicator.name": {
+        "hash": 3504080871
+    },
+    "entity.witch.name": {
+        "hash": 3595043247
+    },
+    "entity.wither_skeleton.name": {
+        "hash": 3771198360
+    },
+    "entity.wolf.name": {
+        "hash": 3373492103
+    },
+    "entity.xp_orb.name": {
+        "hash": 3221090474
+    },
+    "entity.xp_bottle.name": {
+        "hash": 2281135493
+    },
+    "entity.zombie.name": {
+        "hash": 4168795929
+    },
+    "entity.zombie_horse.name": {
+        "hash": 3593511209
+    },
+    "entity.zombie_pigman.name": {
+        "hash": 636715568
+    },
+    "entity.zombie_villager.name": {
+        "hash": 1940419790
+    },
+    "furnaceScreen.fuel": {
+        "hash": 108339812
+    },
+    "furnaceScreen.input": {
+        "hash": 1694562981
+    },
+    "furnaceScreen.result": {
+        "hash": 2016990611
+    },
+    "gameMode.adventure": {
+        "hash": 59722479
+    },
+    "gameMode.changed": {
+        "hash": 239121949
+    },
+    "gameMode.creative": {
+        "hash": 3113612252
+    },
+    "gameMode.hardcore": {
+        "hash": 1601685700
+    },
+    "gameMode.spectator": {
+        "hash": 1638539664
+    },
+    "gameMode.survival": {
+        "hash": 3459968629
+    },
+    "generator.amplified": {
+        "hash": 1880477859
+    },
+    "generator.amplified.info": {
+        "hash": 2396135667
+    },
+    "generator.customized": {
+        "hash": 2626640535
+    },
+    "generator.debug_all_block_states": {
+        "hash": 2255250944
+    },
+    "generator.infinite": {
+        "hash": 3987155987
+    },
+    "generator.largeBiomes": {
+        "hash": 3766689832
+    },
+    "generator.nether": {
+        "hash": 985965610
+    },
+    "generator.old": {
+        "hash": 173277895
+    },
+    "gui.all": {
+        "hash": 338614623
+    },
+    "gui.back": {
+        "hash": 3376021353
+    },
+    "gui.default": {
+        "hash": 1574554460
+    },
+    "gui.decline": {
+        "hash": 458314387
+    },
+    "gui.error": {
+        "hash": 2894654444
+    },
+    "gui.exit": {
+        "hash": 936589090
+    },
+    "gui.exportWorld": {
+        "hash": 1211002591
+    },
+    "gui.importWorld": {
+        "hash": 227239003
+    },
+    "gui.minecraftWorld": {
+        "hash": 2310976367
+    },
+    "gui.login": {
+        "hash": 2574890133
+    },
+    "gui.logout": {
+        "hash": 1598839816
+    },
+    "gui.none": {
+        "hash": 3534295436
+    },
+    "gui.pickWorld": {
+        "hash": 436114282
+    },
+    "gui.select": {
+        "hash": 3067370888
+    },
+    "gui.stats": {
+        "hash": 3023766182
+    },
+    "gui.tab": {
+        "hash": 2823820266
+    },
+    "gui.toMenu": {
+        "hash": 1318155718
+    },
+    "gui.resourcepacks": {
+        "hash": 1472413916
+    },
+    "level.export.started": {
+        "hash": 31946999
+    },
+    "level.import.started": {
+        "hash": 3873072486
+    },
+    "level.export.success": {
+        "hash": 3722631483
+    },
+    "level.import.success": {
+        "hash": 1889531480
+    },
+    "level.export.failed": {
+        "hash": 1764446029
+    },
+    "level.import.failed": {
+        "hash": 1311750393
+    },
+    "invite.clear": {
+        "hash": 9757785
+    },
+    "invite.send": {
+        "hash": 276906365
+    },
+    "invite.title": {
+        "hash": 13626714
+    },
+    "invite.error.message": {
+        "hash": 1004424562
+    },
+    "invite.OnlineFriends": {
+        "hash": 974849520
+    },
+    "invite.OfflineFriends": {
+        "hash": 4194582900
+    },
+    "invite.SuggestedFriends": {
+        "hash": 4162467170
+    },
+    "invite.error1": {
+        "hash": 374698117
+    },
+    "invite.error2": {
+        "hash": 78597433
+    },
+    "inventory.binSlot": {
+        "hash": 1963811022
+    },
+    "item.tipped_arrow.name": {
+        "hash": 2421431308
+    },
+    "item.steak.name": {
+        "hash": 1505182
+    },
+    "item.canBreak": {
+        "hash": 243160880
+    },
+    "item.canPlace": {
+        "hash": 1125684330
+    },
+    "item.charcoal.name": {
+        "hash": 2625660703
+    },
+    "item.dyed": {
+        "hash": 58516421
+    },
+    "item.fireworks.flight": {
+        "hash": 1501637375
+    },
+    "item.fireworks.name": {
+        "hash": 782383097
+    },
+    "item.fireworksCharge.black": {
+        "hash": 2989970424
+    },
+    "item.fireworksCharge.blue": {
+        "hash": 1941577344
+    },
+    "item.fireworksCharge.brown": {
+        "hash": 1313991498
+    },
+    "item.fireworksCharge.customColor": {
+        "hash": 3408825877
+    },
+    "item.fireworksCharge.cyan": {
+        "hash": 3621581246
+    },
+    "item.fireworksCharge.fadeTo": {
+        "hash": 2165965855
+    },
+    "item.fireworksCharge.flicker": {
+        "hash": 2968100001
+    },
+    "item.fireworksCharge.gray": {
+        "hash": 2708865693
+    },
+    "item.fireworksCharge.green": {
+        "hash": 2927882393
+    },
+    "item.fireworksCharge.lightBlue": {
+        "hash": 1240032535
+    },
+    "item.fireworksCharge.lime": {
+        "hash": 229698533
+    },
+    "item.fireworksCharge.magenta": {
+        "hash": 3297657262
+    },
+    "item.fireworksCharge.name": {
+        "hash": 330563686
+    },
+    "item.fireworksCharge.orange": {
+        "hash": 3423998866
+    },
+    "item.fireworksCharge.pink": {
+        "hash": 3681455022
+    },
+    "item.fireworksCharge.purple": {
+        "hash": 739410144
+    },
+    "item.fireworksCharge.red": {
+        "hash": 3648877080
+    },
+    "item.fireworksCharge.silver": {
+        "hash": 3334768439
+    },
+    "item.fireworksCharge.trail": {
+        "hash": 2349460361
+    },
+    "item.fireworksCharge.type": {
+        "hash": 606943937
+    },
+    "item.fireworksCharge.type.0": {
+        "hash": 396414740
+    },
+    "item.fireworksCharge.type.1": {
+        "hash": 97987457
+    },
+    "item.fireworksCharge.type.2": {
+        "hash": 977245265
+    },
+    "item.fireworksCharge.type.3": {
+        "hash": 670724039
+    },
+    "item.fireworksCharge.type.4": {
+        "hash": 1592548778
+    },
+    "item.fireworksCharge.white": {
+        "hash": 686621182
+    },
+    "item.fireworksCharge.yellow": {
+        "hash": 1946284374
+    },
+    "item.minecartFurnace.name": {
+        "hash": 3177545358
+    },
+    "item.portfolio.name": {
+        "hash": 4285709659
+    },
+    "item.record.name": {
+        "hash": 2214795874
+    },
+    "item.ruby.name": {
+        "hash": 2046369340
+    },
+    "item.unbreakable": {
+        "hash": 1121194828
+    },
+    "itemGroup.search": {
+        "hash": 1502840080
+    },
+    "key.categories.gameplay": {
+        "hash": 3802247775
+    },
+    "key.categories.inventory": {
+        "hash": 1000541323
+    },
+    "key.categories.misc": {
+        "hash": 4035024055
+    },
+    "key.categories.movement": {
+        "hash": 2435198675
+    },
+    "key.categories.multiplayer": {
+        "hash": 185749701
+    },
+    "key.categories.stream": {
+        "hash": 4214743688
+    },
+    "key.categories.ui": {
+        "hash": 422335832
+    },
+    "key.fullscreen": {
+        "hash": 569518962
+    },
+    "key.mouseButton": {
+        "hash": 1221183539
+    },
+    "key.playerlist": {
+        "hash": 2308062587
+    },
+    "key.screenshot": {
+        "hash": 1094879256
+    },
+    "key.smoothCamera": {
+        "hash": 2927934429
+    },
+    "key.spectatorOutlines": {
+        "hash": 66543768
+    },
+    "key.streamCommercial": {
+        "hash": 2571903729
+    },
+    "key.streamPauseUnpause": {
+        "hash": 2212555237
+    },
+    "key.streamStartStop": {
+        "hash": 1416239591
+    },
+    "key.streamToggleMic": {
+        "hash": 3468352469
+    },
+    "livingroom.hint.tap_touchpad_for_immersive": {
+        "hash": 2650252064
+    },
+    "livingroom.hint.tap_view_for_immersive": {
+        "hash": 2335477320
+    },
+    "livingroom.hint.tap_view_for_immersive_gamepad": {
+        "hash": 1960498039
+    },
+    "map.toolTip.displayMarkers": {
+        "hash": 1187405118
+    },
+    "map.toolTip.scaling": {
+        "hash": 1058915512
+    },
+    "map.toolTip.level": {
+        "hash": 2412861353
+    },
+    "map.toolTip.unkown": {
+        "hash": 4195245131
+    },
+    "map.position": {
+        "hash": 1118173581
+    },
+    "menu.achievements": {
+        "hash": 2659861216
+    },
+    "menu.convertingLevel": {
+        "hash": 3059245211
+    },
+    "menu.copyright": {
+        "hash": 3654117675
+    },
+    "menu.game": {
+        "hash": 2732151926
+    },
+    "menu.generatingLevel": {
+        "hash": 1282007119
+    },
+    "menu.generatingTerrain": {
+        "hash": 1268922369
+    },
+    "menu.loadingLevel": {
+        "hash": 2689393470
+    },
+    "menu.online": {
+        "hash": 386531298
+    },
+    "menu.settings": {
+        "hash": 516117284
+    },
+    "menu.playdemo": {
+        "hash": 3914839223
+    },
+    "menu.playOnRealms": {
+        "hash": 1473362046
+    },
+    "menu.quit": {
+        "hash": 2086105448
+    },
+    "menu.resetdemo": {
+        "hash": 2252766255
+    },
+    "menu.resourcepacks": {
+        "hash": 1151596472
+    },
+    "menu.respawning": {
+        "hash": 2853077539
+    },
+    "menu.returnToGame": {
+        "hash": 3999935267
+    },
+    "menu.returnToMenu": {
+        "hash": 4061927876
+    },
+    "menu.shareToLan": {
+        "hash": 1610354839
+    },
+    "menu.simulating": {
+        "hash": 869568098
+    },
+    "menu.singleplayer": {
+        "hash": 39909605
+    },
+    "menu.start": {
+        "hash": 1417122383
+    },
+    "menu.switchingLevel": {
+        "hash": 3851681744
+    },
+    "menu.makingBackup": {
+        "hash": 594080680
+    },
+    "menu.saving": {
+        "hash": 3133792208
+    },
+    "merchant.deprecated": {
+        "hash": 2277910608
+    },
+    "mount.onboard": {
+        "hash": 1545070053
+    },
+    "multiplayer.player.joined": {
+        "hash": 2931581216
+    },
+    "multiplayer.player.left": {
+        "hash": 3263920761
+    },
+    "options.advancedButton": {
+        "hash": 893377534
+    },
+    "options.advancedOpengl": {
+        "hash": 4091187636
+    },
+    "options.advancedVideoTitle": {
+        "hash": 3623545490
+    },
+    "options.anaglyph": {
+        "hash": 1527886402
+    },
+    "options.animatetextures": {
+        "hash": 3792007426
+    },
+    "options.ao": {
+        "hash": 4011807072
+    },
+    "options.ao.max": {
+        "hash": 139323053
+    },
+    "options.ao.min": {
+        "hash": 143132545
+    },
+    "options.ao.off": {
+        "hash": 927358023
+    },
+    "options.blockAlternatives": {
+        "hash": 1841775383
+    },
+    "options.changeGamertag": {
+        "hash": 723496308
+    },
+    "options.chat.color": {
+        "hash": 981211217
+    },
+    "options.chat.height.focused": {
+        "hash": 3841534863
+    },
+    "options.chat.height.unfocused": {
+        "hash": 3051314895
+    },
+    "options.chat.links": {
+        "hash": 1263160330
+    },
+    "options.chat.links.prompt": {
+        "hash": 3169881752
+    },
+    "options.chat.opacity": {
+        "hash": 1817936614
+    },
+    "options.chat.scale": {
+        "hash": 779816170
+    },
+    "options.chat.title": {
+        "hash": 545189087
+    },
+    "options.chat.visibility": {
+        "hash": 3611102235
+    },
+    "options.chat.visibility.full": {
+        "hash": 2002656240
+    },
+    "options.chat.visibility.hidden": {
+        "hash": 4112832646
+    },
+    "options.chat.visibility.system": {
+        "hash": 2024733712
+    },
+    "options.chat.width": {
+        "hash": 1078077111
+    },
+    "options.controllerLayout": {
+        "hash": 310445216
+    },
+    "options.controls": {
+        "hash": 1040621064
+    },
+    "options.customizeTitle": {
+        "hash": 1678530305
+    },
+    "options.difficulty.hardcore": {
+        "hash": 2806659772
+    },
+    "options.dpadscale": {
+        "hash": 3294641273
+    },
+    "options.entityShadows": {
+        "hash": 62666642
+    },
+    "options.farWarning1": {
+        "hash": 806618997
+    },
+    "options.farWarning2": {
+        "hash": 1246706667
+    },
+    "options.fboEnable": {
+        "hash": 3546922730
+    },
+    "options.forceUnicodeFont": {
+        "hash": 1202159153
+    },
+    "options.fov.max": {
+        "hash": 95355656
+    },
+    "options.fov.min": {
+        "hash": 1834830107
+    },
+    "options.framerateLimit": {
+        "hash": 2149965342
+    },
+    "options.framerateLimit.max": {
+        "hash": 2299376562
+    },
+    "options.gamertag": {
+        "hash": 2681688622
+    },
+    "options.gamma.max": {
+        "hash": 1613937145
+    },
+    "options.gamma.min": {
+        "hash": 3708136097
+    },
+    "options.graphics.fancy": {
+        "hash": 463391718
+    },
+    "options.graphics.fast": {
+        "hash": 611055900
+    },
+    "options.group.audio": {
+        "hash": 2798655135
+    },
+    "options.group.feedback": {
+        "hash": 2787661962
+    },
+    "options.group.game": {
+        "hash": 214026130
+    },
+    "options.group.graphics": {
+        "hash": 4210482424
+    },
+    "options.group.graphics.experimental": {
+        "hash": 15685712
+    },
+    "options.group.input": {
+        "hash": 103440469
+    },
+    "options.guiScale": {
+        "hash": 1414501340
+    },
+    "options.guiScale.auto": {
+        "hash": 1813044060
+    },
+    "options.guiScale.large": {
+        "hash": 2165324438
+    },
+    "options.guiScale.normal": {
+        "hash": 1387366055
+    },
+    "options.guiScale.small": {
+        "hash": 4083321084
+    },
+    "options.hidden": {
+        "hash": 1440833431
+    },
+    "options.invertMouse": {
+        "hash": 3627249705
+    },
+    "options.keyboardLayout": {
+        "hash": 3040885746
+    },
+    "options.languageWarning": {
+        "hash": 3534173652
+    },
+    "options.mipmapLevels": {
+        "hash": 1248696662
+    },
+    "options.modelPart.cape": {
+        "hash": 770867313
+    },
+    "options.modelPart.hat": {
+        "hash": 1868888268
+    },
+    "options.modelPart.jacket": {
+        "hash": 876217386
+    },
+    "options.modelPart.left_pants_leg": {
+        "hash": 2742894937
+    },
+    "options.modelPart.left_sleeve": {
+        "hash": 3984315227
+    },
+    "options.modelPart.right_pants_leg": {
+        "hash": 664973203
+    },
+    "options.modelPart.right_sleeve": {
+        "hash": 240829712
+    },
+    "options.off": {
+        "hash": 3969081969
+    },
+    "options.on": {
+        "hash": 2644474154
+    },
+    "options.particles": {
+        "hash": 3950944328
+    },
+    "options.particles.all": {
+        "hash": 3698133444
+    },
+    "options.particles.decreased": {
+        "hash": 395076650
+    },
+    "options.particles.minimal": {
+        "hash": 3977869234
+    },
+    "options.performanceButton": {
+        "hash": 378553766
+    },
+    "options.performanceVideoTitle": {
+        "hash": 1318039211
+    },
+    "options.postButton": {
+        "hash": 1783332536
+    },
+    "options.postProcessEnable": {
+        "hash": 1016592923
+    },
+    "options.postVideoTitle": {
+        "hash": 1514333723
+    },
+    "options.qualityButton": {
+        "hash": 4112118820
+    },
+    "options.qualityVideoTitle": {
+        "hash": 192400645
+    },
+    "options.reducedDebugInfo": {
+        "hash": 1352692846
+    },
+    "options.renderClouds": {
+        "hash": 1219739342
+    },
+    "options.renderDistance.far": {
+        "hash": 157994649
+    },
+    "options.renderDistance.normal": {
+        "hash": 3591674516
+    },
+    "options.renderDistance.short": {
+        "hash": 2092040359
+    },
+    "options.renderDistance.tiny": {
+        "hash": 584166634
+    },
+    "options.saturation": {
+        "hash": 360276061
+    },
+    "options.sensitivity.max": {
+        "hash": 3623916631
+    },
+    "options.sensitivity.min": {
+        "hash": 2930363046
+    },
+    "options.skinCustomisation": {
+        "hash": 1343140261
+    },
+    "options.skinCustomisation.title": {
+        "hash": 1975609121
+    },
+    "options.snooper": {
+        "hash": 3632047120
+    },
+    "options.snooper.desc": {
+        "hash": 1581564100
+    },
+    "options.snooper.title": {
+        "hash": 576430229
+    },
+    "options.snooper.view": {
+        "hash": 2692590898
+    },
+    "options.sounds": {
+        "hash": 1354013425
+    },
+    "options.sounds.title": {
+        "hash": 2639916043
+    },
+    "options.title": {
+        "hash": 3528939868
+    },
+    "options.touchscreen": {
+        "hash": 1189795282
+    },
+    "options.vbo": {
+        "hash": 4181073461
+    },
+    "options.video": {
+        "hash": 2864369136
+    },
+    "options.videoTitle": {
+        "hash": 3387391627
+    },
+    "options.visible": {
+        "hash": 22133240
+    },
+    "options.vsync": {
+        "hash": 2871254216
+    },
+    "pauseScreen.invite": {
+        "hash": 4219038510
+    },
+    "pauseScreen.ipAddress": {
+        "hash": 2552422796
+    },
+    "playscreen.fileSize.MB": {
+        "hash": 2651745966
+    },
+    "playscreen.fileSize.GB": {
+        "hash": 2436101041
+    },
+    "playscreen.header.local": {
+        "hash": 1077873986
+    },
+    "playscreen.header.realms": {
+        "hash": 1915186190
+    },
+    "playscreen.lastPlayed.daysAgo": {
+        "hash": 3010318634
+    },
+    "playscreen.lastPlayed.longAgo": {
+        "hash": 3588785727
+    },
+    "playscreen.lastPlayed.today": {
+        "hash": 1504962415
+    },
+    "playscreen.lastPlayed.weeksAgo": {
+        "hash": 542966451
+    },
+    "playscreen.lastPlayed.yesterday": {
+        "hash": 1624937715
+    },
+    "playscreen.new": {
+        "hash": 3277253194
+    },
+    "playscreen.remoteWorld": {
+        "hash": 3033446720
+    },
+    "playscreen.checkingRealmsCompatibility": {
+        "hash": 301661861
+    },
+    "playscreen.fetchingRealms": {
+        "hash": 2189852075
+    },
+    "playscreen.confirmLeaveMessage": {
+        "hash": 3616118196
+    },
+    "playscreen.confirmLeaveTitle": {
+        "hash": 4058554114
+    },
+    "playscreen.realmExpired": {
+        "hash": 2128599167
+    },
+    "playscreen.realmFull": {
+        "hash": 2166297091
+    },
+    "portfolioScreen.page": {
+        "hash": 1900231084
+    },
+    "portfolioScreen.export": {
+        "hash": 1565072982
+    },
+    "portfolioScreen.caption": {
+        "hash": 998531469
+    },
+    "potion.confusion.postfix": {
+        "hash": 939660136
+    },
+    "potion.digSlowDown.postfix": {
+        "hash": 1691068569
+    },
+    "potion.digSpeed.postfix": {
+        "hash": 4144530883
+    },
+    "potion.effects.whenDrank": {
+        "hash": 3213517166
+    },
+    "potion.potency.2": {
+        "hash": 928048309
+    },
+    "potion.potency.3": {
+        "hash": 3838525351
+    },
+    "potion.prefix.acrid": {
+        "hash": 415421974
+    },
+    "potion.prefix.artless": {
+        "hash": 2195373921
+    },
+    "potion.prefix.bland": {
+        "hash": 2566345257
+    },
+    "potion.prefix.bulky": {
+        "hash": 1353680669
+    },
+    "potion.prefix.bungling": {
+        "hash": 3170874360
+    },
+    "potion.prefix.buttered": {
+        "hash": 1143733501
+    },
+    "potion.prefix.charming": {
+        "hash": 3960856420
+    },
+    "potion.prefix.clear": {
+        "hash": 2213166476
+    },
+    "potion.prefix.cordial": {
+        "hash": 2137955052
+    },
+    "potion.prefix.dashing": {
+        "hash": 4029062610
+    },
+    "potion.prefix.debonair": {
+        "hash": 310300266
+    },
+    "potion.prefix.diffuse": {
+        "hash": 2334053393
+    },
+    "potion.prefix.elegant": {
+        "hash": 3054040995
+    },
+    "potion.prefix.fancy": {
+        "hash": 1341558759
+    },
+    "potion.prefix.foul": {
+        "hash": 1361380728
+    },
+    "potion.prefix.gross": {
+        "hash": 2524964254
+    },
+    "potion.prefix.harsh": {
+        "hash": 1849112197
+    },
+    "potion.prefix.milky": {
+        "hash": 3942614412
+    },
+    "potion.prefix.odorless": {
+        "hash": 2546440043
+    },
+    "potion.prefix.potent": {
+        "hash": 834205518
+    },
+    "potion.prefix.rank": {
+        "hash": 4111727757
+    },
+    "potion.prefix.refined": {
+        "hash": 2121539264
+    },
+    "potion.prefix.smooth": {
+        "hash": 3772169684
+    },
+    "potion.prefix.sparkling": {
+        "hash": 2584414839
+    },
+    "potion.prefix.stinky": {
+        "hash": 2701751186
+    },
+    "potion.prefix.suave": {
+        "hash": 4137425190
+    },
+    "potion.prefix.thin": {
+        "hash": 2068549314
+    },
+    "potion.prefix.uninteresting": {
+        "hash": 718650445
+    },
+    "progressScreen.generating": {
+        "hash": 2580338154
+    },
+    "progressScreen.message.exporting": {
+        "hash": 172270372
+    },
+    "progressScreen.message.importing": {
+        "hash": 2829007962
+    },
+    "progressScreen.message.waitingForRealms": {
+        "hash": 3918581157
+    },
+    "recipeBook.setting.full": {
+        "hash": 1447112128
+    },
+    "recipeBook.setting.discover": {
+        "hash": 779725856
+    },
+    "recipeBook.setting.off": {
+        "hash": 2912851017
+    },
+    "record.nowPlaying": {
+        "hash": 264113926
+    },
+    "resourcePack.available.title": {
+        "hash": 1203502626
+    },
+    "resourcePack.folderInfo": {
+        "hash": 1599461170
+    },
+    "resourcePack.openFolder": {
+        "hash": 548627135
+    },
+    "resourcePack.selected.title": {
+        "hash": 2919899948
+    },
+    "resourcePack.title": {
+        "hash": 3540251600
+    },
+    "resourcePack.copyGlobal": {
+        "hash": 2128939531
+    },
+    "resourcePack.description": {
+        "hash": 1786613309
+    },
+    "resourcepack.City": {
+        "hash": 1986427136
+    },
+    "resourcepack.Plastic": {
+        "hash": 35889480
+    },
+    "resourcepack.Natural": {
+        "hash": 268366099
+    },
+    "resourcePack.vanilla.description": {
+        "hash": 3352444172
+    },
+    "resourcePack.city.description": {
+        "hash": 2282513987
+    },
+    "resourcePack.plastic.description": {
+        "hash": 3458588671
+    },
+    "resourcePack.natural.description": {
+        "hash": 3465547057
+    },
+    "screenshot.failure": {
+        "hash": 1393227006
+    },
+    "screenshot.success": {
+        "hash": 124645945
+    },
+    "selectServer.deleteButton": {
+        "hash": 317317413
+    },
+    "selectWorld.allowCommands": {
+        "hash": 375689271
+    },
+    "selectWorld.allowCommands.info": {
+        "hash": 2185131847
+    },
+    "selectWorld.bonusItems": {
+        "hash": 1696098974
+    },
+    "selectWorld.cheats": {
+        "hash": 3406533902
+    },
+    "selectWorld.conversion": {
+        "hash": 2489951995
+    },
+    "selectWorld.createDemo": {
+        "hash": 4264205138
+    },
+    "selectWorld.customizeType": {
+        "hash": 1896029196
+    },
+    "selectWorld.deleteButton": {
+        "hash": 2121376287
+    },
+    "selectWorld.empty": {
+        "hash": 3212687677
+    },
+    "selectWorld.enterSeed": {
+        "hash": 1974414285
+    },
+    "selectWorld.gameMode": {
+        "hash": 1348980370
+    },
+    "selectWorld.gameMode.adventure": {
+        "hash": 2656514537
+    },
+    "selectWorld.gameMode.adventure.line1": {
+        "hash": 787691848
+    },
+    "selectWorld.gameMode.adventure.line2": {
+        "hash": 2166185371
+    },
+    "selectWorld.gameMode.creative": {
+        "hash": 423592444
+    },
+    "selectWorld.gameMode.creative.line1": {
+        "hash": 931398579
+    },
+    "selectWorld.gameMode.creative.line2": {
+        "hash": 1229563710
+    },
+    "selectWorld.gameMode.hardcore": {
+        "hash": 1682614608
+    },
+    "selectWorld.gameMode.hardcore.line1": {
+        "hash": 106406378
+    },
+    "selectWorld.gameMode.hardcore.line2": {
+        "hash": 1395407762
+    },
+    "selectWorld.gameMode.spectator": {
+        "hash": 1685777217
+    },
+    "selectWorld.gameMode.spectator.line1": {
+        "hash": 2515072946
+    },
+    "selectWorld.gameMode.survival": {
+        "hash": 187659845
+    },
+    "selectWorld.gameMode.survival.line1": {
+        "hash": 2638128316
+    },
+    "selectWorld.gameMode.survival.line2": {
+        "hash": 2412284368
+    },
+    "selectWorld.hardcoreMode": {
+        "hash": 2394386582
+    },
+    "selectWorld.hardcoreMode.info": {
+        "hash": 1083120740
+    },
+    "selectWorld.mapFeatures": {
+        "hash": 2105368816
+    },
+    "selectWorld.mapFeatures.info": {
+        "hash": 991842586
+    },
+    "selectWorld.mapType": {
+        "hash": 2430006206
+    },
+    "selectWorld.mapType.normal": {
+        "hash": 226276259
+    },
+    "selectWorld.moreWorldOptions": {
+        "hash": 3449381324
+    },
+    "selectWorld.newWorld": {
+        "hash": 670483999
+    },
+    "selectWorld.newWorld.copyOf": {
+        "hash": 2449760814
+    },
+    "selectWorld.realmsComingSoon": {
+        "hash": 1500092807
+    },
+    "selectWorld.realmsBeta": {
+        "hash": 2643794763
+    },
+    "selectWorld.learnMore": {
+        "hash": 2665160592
+    },
+    "selectWorld.recreate": {
+        "hash": 1168143640
+    },
+    "selectWorld.rename": {
+        "hash": 931677847
+    },
+    "selectWorld.renameButton": {
+        "hash": 1749365079
+    },
+    "selectWorld.renameTitle": {
+        "hash": 1635524366
+    },
+    "selectWorld.resultFolder": {
+        "hash": 3483813427
+    },
+    "selectWorld.seedInfo": {
+        "hash": 3236767593
+    },
+    "selectWorld.select": {
+        "hash": 4290862243
+    },
+    "selectWorld.tab.realms": {
+        "hash": 4007750219
+    },
+    "selectWorld.tab.friends": {
+        "hash": 2562086297
+    },
+    "selectWorld.tab.classmates": {
+        "hash": 3601778447
+    },
+    "selectWorld.title": {
+        "hash": 1640759866
+    },
+    "selectWorld.world": {
+        "hash": 1637406995
+    },
+    "skin.New": {
+        "hash": 2173684068
+    },
+    "skins.buy.buyButton": {
+        "hash": 2619284049
+    },
+    "skins.buy.cancelButton": {
+        "hash": 1852746718
+    },
+    "skins.buy.noConnection": {
+        "hash": 3681304248
+    },
+    "skins.information.ingame": {
+        "hash": 1769458828
+    },
+    "skins.information.invalidCustomSkin": {
+        "hash": 1949194382
+    },
+    "skins.information.upsellWithoutStore": {
+        "hash": 186104997
+    },
+    "skins.information.selectSkin": {
+        "hash": 2039448738
+    },
+    "skins.show.restorePurchaseButton": {
+        "hash": 829928212
+    },
+    "skins.skinpackHeader.packs": {
+        "hash": 2251036745
+    },
+    "skins.title": {
+        "hash": 3899382087
+    },
+    "skins.picker.custom.button": {
+        "hash": 3717932893
+    },
+    "skins.picker.default": {
+        "hash": 3509605131
+    },
+    "skins.picker.recent": {
+        "hash": 3920154370
+    },
+    "skins.store.upsell.equip.button": {
+        "hash": 2972578545
+    },
+    "skins.store.upsell.info": {
+        "hash": 3967433634
+    },
+    "soundCategory.ambient": {
+        "hash": 517942698
+    },
+    "soundCategory.block": {
+        "hash": 2109466448
+    },
+    "soundCategory.hostile": {
+        "hash": 1935150731
+    },
+    "soundCategory.master": {
+        "hash": 1956601060
+    },
+    "soundCategory.music": {
+        "hash": 2793247099
+    },
+    "soundCategory.neutral": {
+        "hash": 494981638
+    },
+    "soundCategory.player": {
+        "hash": 413355859
+    },
+    "soundCategory.record": {
+        "hash": 312206962
+    },
+    "soundCategory.weather": {
+        "hash": 1040333438
+    },
+    "stat.animalsBred": {
+        "hash": 3646961352
+    },
+    "stat.armorCleaned": {
+        "hash": 249356004
+    },
+    "stat.bannerCleaned": {
+        "hash": 2550579363
+    },
+    "stat.beaconInteraction": {
+        "hash": 1011702620
+    },
+    "stat.blocksButton": {
+        "hash": 3131981325
+    },
+    "stat.boatOneCm": {
+        "hash": 453047515
+    },
+    "stat.breakItem": {
+        "hash": 1727786853
+    },
+    "stat.brewingstandInteraction": {
+        "hash": 1385931091
+    },
+    "stat.cakeSlicesEaten": {
+        "hash": 26494300
+    },
+    "stat.cauldronFilled": {
+        "hash": 3829998855
+    },
+    "stat.cauldronUsed": {
+        "hash": 3973643267
+    },
+    "stat.chestOpened": {
+        "hash": 857630441
+    },
+    "stat.climbOneCm": {
+        "hash": 3754633955
+    },
+    "stat.crafted": {
+        "hash": 2731369917
+    },
+    "stat.craftItem": {
+        "hash": 783143040
+    },
+    "stat.createWorld": {
+        "hash": 652657823
+    },
+    "stat.crouchOneCm": {
+        "hash": 1923368235
+    },
+    "stat.damageDealt": {
+        "hash": 2167165399
+    },
+    "stat.damageTaken": {
+        "hash": 229467837
+    },
+    "stat.deaths": {
+        "hash": 2166916353
+    },
+    "stat.depleted": {
+        "hash": 1156107735
+    },
+    "stat.dispenserInspected": {
+        "hash": 1388291367
+    },
+    "stat.diveOneCm": {
+        "hash": 2974255901
+    },
+    "stat.drop": {
+        "hash": 248684604
+    },
+    "stat.dropperInspected": {
+        "hash": 1286064155
+    },
+    "stat.enderchestOpened": {
+        "hash": 3520600225
+    },
+    "stat.entityKilledBy": {
+        "hash": 2002413076
+    },
+    "stat.entityKilledBy.none": {
+        "hash": 735396820
+    },
+    "stat.entityKills": {
+        "hash": 913364407
+    },
+    "stat.entityKills.none": {
+        "hash": 733335178
+    },
+    "stat.fallOneCm": {
+        "hash": 2562064056
+    },
+    "stat.fishCaught": {
+        "hash": 184570485
+    },
+    "stat.flowerPotted": {
+        "hash": 1360850133
+    },
+    "stat.flyOneCm": {
+        "hash": 2689018678
+    },
+    "stat.furnaceInteraction": {
+        "hash": 1486773523
+    },
+    "stat.generalButton": {
+        "hash": 3028149339
+    },
+    "stat.hopperInspected": {
+        "hash": 89278119
+    },
+    "stat.horseOneCm": {
+        "hash": 2416333018
+    },
+    "stat.itemEnchanted": {
+        "hash": 756915588
+    },
+    "stat.itemsButton": {
+        "hash": 3386004851
+    },
+    "stat.joinMultiplayer": {
+        "hash": 2516836020
+    },
+    "stat.jump": {
+        "hash": 551239694
+    },
+    "stat.junkFished": {
+        "hash": 1419211755
+    },
+    "stat.leaveGame": {
+        "hash": 3826645458
+    },
+    "stat.loadWorld": {
+        "hash": 323881814
+    },
+    "stat.mineBlock": {
+        "hash": 3475747577
+    },
+    "stat.minecartOneCm": {
+        "hash": 1818725227
+    },
+    "stat.mined": {
+        "hash": 3691055149
+    },
+    "stat.mobKills": {
+        "hash": 3537158093
+    },
+    "stat.mobsButton": {
+        "hash": 739369782
+    },
+    "stat.noteblockPlayed": {
+        "hash": 3642776245
+    },
+    "stat.noteblockTuned": {
+        "hash": 199135688
+    },
+    "stat.pigOneCm": {
+        "hash": 1834406277
+    },
+    "stat.playerKills": {
+        "hash": 3419705350
+    },
+    "stat.playOneMinute": {
+        "hash": 124025554
+    },
+    "stat.recordPlayed": {
+        "hash": 3406783852
+    },
+    "stat.sprintOneCm": {
+        "hash": 3879503987
+    },
+    "stat.startGame": {
+        "hash": 3996114409
+    },
+    "stat.swimOneCm": {
+        "hash": 62201189
+    },
+    "stat.talkedToVillager": {
+        "hash": 1733441723
+    },
+    "stat.timeSinceDeath": {
+        "hash": 558521348
+    },
+    "stat.tradedWithVillager": {
+        "hash": 3977048405
+    },
+    "stat.trappedChestTriggered": {
+        "hash": 1564648689
+    },
+    "stat.treasureFished": {
+        "hash": 1575118032
+    },
+    "stat.used": {
+        "hash": 888740808
+    },
+    "stat.useItem": {
+        "hash": 2527624350
+    },
+    "stat.walkOneCm": {
+        "hash": 1885037247
+    },
+    "stat.workbenchInteraction": {
+        "hash": 428307663
+    },
+    "stats.tooltip.type.achievement": {
+        "hash": 2201095097
+    },
+    "stats.tooltip.type.statistic": {
+        "hash": 2893236572
+    },
+    "store.title": {
+        "hash": 685890336
+    },
+    "store.resource.try": {
+        "hash": 544817607
+    },
+    "store.resource.create": {
+        "hash": 3300033650
+    },
+    "store.resource.screenshots": {
+        "hash": 3274761516
+    },
+    "store.restore.description": {
+        "hash": 3132569329
+    },
+    "store.restore.failed": {
+        "hash": 3893546607
+    },
+    "tile.allow.name": {
+        "hash": 3235088438
+    },
+    "tile.border_block.name": {
+        "hash": 3863078338
+    },
+    "tile.barrier.name": {
+        "hash": 2925393473
+    },
+    "tile.bed.noSleep": {
+        "hash": 3979430131
+    },
+    "tile.bed.notSafe": {
+        "hash": 109720069
+    },
+    "tile.bed.occupied": {
+        "hash": 1694498439
+    },
+    "tile.chalkboard.oneByOne.name": {
+        "hash": 4009076754
+    },
+    "tile.chalkboard.twoByOne.name": {
+        "hash": 1847162382
+    },
+    "tile.chalkboard.threeByTwo.name": {
+        "hash": 3106284396
+    },
+    "tile.shulkerBoxWhite.name": {
+        "hash": 798866375
+    },
+    "tile.shulkerBoxOrange.name": {
+        "hash": 4017373353
+    },
+    "tile.shulkerBoxMagenta.name": {
+        "hash": 1195631491
+    },
+    "tile.shulkerBoxLightBlue.name": {
+        "hash": 3987060288
+    },
+    "tile.shulkerBoxYellow.name": {
+        "hash": 3824588621
+    },
+    "tile.shulkerBoxLime.name": {
+        "hash": 1178620523
+    },
+    "tile.shulkerBoxPink.name": {
+        "hash": 1404438215
+    },
+    "tile.shulkerBoxGray.name": {
+        "hash": 2803103646
+    },
+    "tile.shulkerBoxSilver.name": {
+        "hash": 1644062700
+    },
+    "tile.shulkerBoxCyan.name": {
+        "hash": 1942243514
+    },
+    "tile.shulkerBoxPurple.name": {
+        "hash": 2410245093
+    },
+    "tile.shulkerBoxBlue.name": {
+        "hash": 1538555624
+    },
+    "tile.shulkerBoxBrown.name": {
+        "hash": 2462512830
+    },
+    "tile.shulkerBoxGreen.name": {
+        "hash": 1544413849
+    },
+    "tile.shulkerBoxRed.name": {
+        "hash": 483432798
+    },
+    "tile.shulkerBoxBlack.name": {
+        "hash": 2741721686
+    },
+    "tile.hardened_clay.name": {
+        "hash": 3612353963
+    },
+    "tile.doorWood.name": {
+        "hash": 214916599
+    },
+    "tile.jukebox.name": {
+        "hash": 3833936920
+    },
+    "tile.lockedchest.name": {
+        "hash": 1869657250
+    },
+    "tile.mushroom.name": {
+        "hash": 4140386600
+    },
+    "tile.netherreactor.active": {
+        "hash": 464986774
+    },
+    "tile.netherreactor.builtTooHigh": {
+        "hash": 4186998078
+    },
+    "tile.netherreactor.builtTooLow": {
+        "hash": 2141925838
+    },
+    "tile.netherreactor.playersTooFar": {
+        "hash": 803717239
+    },
+    "tile.netherreactor.wrongPattern": {
+        "hash": 1701860023
+    },
+    "tile.oreRuby.name": {
+        "hash": 2586608291
+    },
+    "tile.double_stone_slab.brick.name": {
+        "hash": 3772461699
+    },
+    "tile.double_stone_slab.cobble.name": {
+        "hash": 871401671
+    },
+    "tile.double_stone_slab.nether_brick.name": {
+        "hash": 738583408
+    },
+    "tile.double_stone_slab.quartz.name": {
+        "hash": 545608487
+    },
+    "tile.double_stone_slab.sand.name": {
+        "hash": 1558314313
+    },
+    "tile.double_stone_slab.smoothStoneBrick.name": {
+        "hash": 1897007659
+    },
+    "tile.double_stone_slab.stone.name": {
+        "hash": 2819567239
+    },
+    "tile.double_stone_slab.wood.name": {
+        "hash": 4178316458
+    },
+    "tile.double_stone_slab2.red_sandstone.name": {
+        "hash": 3450223127
+    },
+    "tile.tallgrass.shrub.name": {
+        "hash": 2133016898
+    },
+    "tile.glazedTerracottaWhite.name": {
+        "hash": 1040041361
+    },
+    "tile.glazedTerracottaOrange.name": {
+        "hash": 1255126065
+    },
+    "tile.glazedTerracottaMagenta.name": {
+        "hash": 608060504
+    },
+    "tile.glazedTerracottaLightBlue.name": {
+        "hash": 1325214845
+    },
+    "tile.glazedTerracottaYellow.name": {
+        "hash": 2977870373
+    },
+    "tile.glazedTerracottaLime.name": {
+        "hash": 4164123435
+    },
+    "tile.glazedTerracottaPink.name": {
+        "hash": 2655958255
+    },
+    "tile.glazedTerracottaGray.name": {
+        "hash": 2610051816
+    },
+    "tile.glazedTerracottaSilver.name": {
+        "hash": 3979192611
+    },
+    "tile.glazedTerracottaCyan.name": {
+        "hash": 1401622384
+    },
+    "tile.glazedTerracottaPurple.name": {
+        "hash": 3463218934
+    },
+    "tile.glazedTerracottaBlue.name": {
+        "hash": 3910408612
+    },
+    "tile.glazedTerracottaBrown.name": {
+        "hash": 3835643453
+    },
+    "tile.glazedTerracottaGreen.name": {
+        "hash": 2808200138
+    },
+    "tile.glazedTerracottaRed.name": {
+        "hash": 1090540278
+    },
+    "tile.glazedTerracottaBlack.name": {
+        "hash": 3893162474
+    },
+    "tipped_arrow.effect.luck": {
+        "hash": 1323560303
+    },
+    "translation.test.args": {
+        "hash": 1162392984
+    },
+    "translation.test.complex": {
+        "hash": 1707466889
+    },
+    "translation.test.escape": {
+        "hash": 2607252227
+    },
+    "translation.test.invalid": {
+        "hash": 3243718836
+    },
+    "translation.test.invalid2": {
+        "hash": 455906397
+    },
+    "translation.test.none": {
+        "hash": 1371001747
+    },
+    "translation.test.world": {
+        "hash": 2345030002
+    },
+    "authserver.notavailable": {
+        "hash": 712203967
+    },
+    "authserver.authfailed": {
+        "hash": 686326393
+    },
+    "platform.model.unknown": {
+        "hash": 875115290
     }
 }

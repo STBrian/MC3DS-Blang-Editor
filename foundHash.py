@@ -23,4 +23,4 @@ while True:
         print("Hash not found for text:", id_text)
 
     with open("./index/text_ids.json", "w", encoding="utf-8") as f:
-            json.dump(text_ids, f, ensure_ascii=False, indent=4)
+        json.dump(text_ids, f, ensure_ascii=False, indent=4)
