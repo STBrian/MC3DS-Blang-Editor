@@ -1,3 +1,4 @@
+import json
 import tkinter, sys, os
 import tkinter.ttk
 import tkinter.messagebox
@@ -7,10 +8,29 @@ import argparse
 from pathlib import Path
 
 from modules import MC3DSBlang
+from modules.MC3DSBlang import get_JOAAT_hash
 
 def populate_tree(tree: ttk.Treeview, blangFile: MC3DSBlang.BlangFile):
-    for i, element in enumerate(blangFile.getTexts()):
-        tree.insert('', tkinter.END, values=(i+1, element))
+    stringsData = blangFile.getStringData()
+
+    with open("./index/text_ids.json", "r", encoding="utf-8") as f:
+        indexData: dict = json.load(f)
+
+    shortedIDs: list[str] = list(indexData.keys())
+    shortedIDs.sort()
+    for key in shortedIDs:
+        id_hash = get_JOAAT_hash(key.lower().encode("utf-8"))
+        if str(id_hash) in stringsData:
+            string = stringsData[str(id_hash)]
+            splited = key.split(".")[:-1]
+            joined = ""
+            pastjoined = ""
+            for element in splited:
+                joined += f"{element}."
+                if not tree.exists(joined):
+                    tree.insert(pastjoined, tkinter.END, iid=joined, text=joined)
+                pastjoined = joined
+            tree.insert(joined, tkinter.END, iid=key, text=key, values=[string["text"]])
     tree.grid(row=0, column=0, sticky="wesn")
 
 class App(tkinter.Tk):
@@ -51,11 +71,7 @@ class App(tkinter.Tk):
         menubar.add_cascade(label="File", menu=file_menu, underline=0)
         # -------------------------------
 
-        self.tree = ttk.Treeview(self, columns=("id", "text"), show='headings', selectmode="browse")
-        self.tree.heading("id", text="ID")
-        self.tree.heading("text", text="Text")
-        self.tree.column("id", width=1, anchor=tkinter.E)
-        self.tree.column("text", width=400)
+        self.tree = ttk.Treeview(self, show='tree', selectmode="browse")
         self.tree.bind('<<TreeviewSelect>>', self.itemSelected)
         self.tree.bind("<Double-1>", self.OnDoubleClick)
         self.scrollbar = tkinter.Scrollbar(self, orient=tkinter.VERTICAL, command=self.tree.yview)
