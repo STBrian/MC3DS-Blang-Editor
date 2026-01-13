@@ -91,6 +91,32 @@ class BlangFile:
                 self.texts[idx] = " "
         return
     
+    # TODO: Improve setText, getText and contains methods
+    def setText(self, textId: str, text: str):
+        dataDict = self.getStringData()
+        dataDict[str(get_JOAAT_hash(textId.lower().encode()))] = text
+        self.importFromDict(dataDict)
+
+    def getText(self, textId: str) -> str | None:
+        dataDict = self.getStringData()
+        try:
+            if textId.isdigit():
+                return dataDict[textId]
+            else:
+                return dataDict[str(get_JOAAT_hash(textId.lower().encode()))]
+        except:
+            return None
+        
+    def contains(self, textId: str):
+        dataDict = self.getStringData()
+        if textId.isdigit():
+            if textId in dataDict:
+                return True
+        else:
+            if str(get_JOAAT_hash(textId.lower().encode)) in dataDict:
+                return True
+        return False
+    
     def export(self, path: str):
         if type(path) != str:
             raise MC3DSBlangException("path must be a 'str'")
@@ -136,8 +162,7 @@ class BlangFile:
             identifier = int.from_bytes(identifier, "little")
             identifier = str(identifier)
             
-            dataDictionary[identifier] = {}
-            dataDictionary[identifier]["text"] = self.texts[i]
+            dataDictionary[identifier] = self.texts[i]
         return dataDictionary
 
     def getJson(self):
@@ -152,7 +177,10 @@ class BlangFile:
         hashedDict = {}
         stringHashes: list[int] = []
         for key, value in data.items():
-            stringHash = get_JOAAT_hash(key.lower().encode("utf-8"))
+            if key.isdigit():
+                stringHash = int(key)
+            else:
+                stringHash = get_JOAAT_hash(key.lower().encode("utf-8"))
             hashedDict[str(stringHash)] = value
             stringHashes.append(stringHash)
         stringHashes.sort()
