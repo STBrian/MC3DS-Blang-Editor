@@ -57,7 +57,6 @@ if len(sys.argv) > 1:
             for hash, textData in missingHashes.items():
                 exportMissing[hash] = textData
         exportLang("./out/missingtexts-en_US.lang", exportMissing)
-        sys.exit(0)
 
         if "language.code" in textIDs:
             lang_code = input("Set the language code: ")
